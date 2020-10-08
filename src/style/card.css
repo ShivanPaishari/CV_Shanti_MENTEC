@@ -1,0 +1,31 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+/* _______mise en page des cartes _________*/
+.card {
+  width: 500px;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 10px;
+  background-color: setColorCard();
+}
+
+.card h2 {
+  padding: 1%;
+  margin: 1%;
+  color: gray;
+}
+
+/* __________mise en page des etiquettes _____*/
+.internalLabel {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 6px;
+  margin: 1%;
+  padding: 20px;
+  font-size: 0.85em;
+  text-align: justify;
+}

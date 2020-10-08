@@ -1,0 +1,226 @@
+[
+  {
+    "xpId": 1,
+    "job": "Office & Admin Manager",
+    "company": "GitBook",
+    "companyType": "Startup, software developpment",
+    "startDate": "Juillet 19",
+    "endDate": "Decembre 19",
+    "place": "Lyon",
+    "resume": " ",
+    "tasks": [
+      {
+        "content": "Gestion de Projet, culture d’entreprise : Projet de mise en place de méthodologie sprints. Définition et formalisation des Valeurs et de la vision d'entreprise. Projet d'accompagnement en communication interne, du travail en full remote ou en mode distribué."
+      },
+      {
+        "content": "Gestion de Projet, événementiel : Organisation et coordination d’événements d’entreprise annuels dont une semaine de Offsite à l'étranger en travaillant sur la logistique et la préparation des workshops (Valeurs/vision, culture Performance).Création de projets et animation des périodes festives ( soirée d'entreprise, activités teambuilding...)"
+      },
+      {
+        "content": "Administration : Rapprochement de factures. Mise à jour de l'affichage légal et du document unique.Gestion et organisation des élections CSE"
+      },
+      {
+        "content": "Facilities : Service généraux ( IT, matériels, consommables, logistiques).Maintenance des locaux en coordonnant les prestataires (réparation, renouvellement des contrats etc)"
+      }
+    ],
+    "tools": [
+      { "content": "Travail en remote selon les jours" },
+      {
+        "content": "Gestion de projet : GitBook, Todoist, Airtable, Slack, Trainline"
+      },
+      {
+        "content": "Administration : Apple suite, Suite office, Spendesk, Docusign"
+      }
+    ]
+  },
+  {
+    "xpId": 2,
+    "job": "Office Manager",
+    "company": "Cosmo Tech",
+    "companyType": "Startup, software editor",
+    "startDate": "mars 2016",
+    "endDate": "Juillet 2019",
+    "place": "Lyon",
+    "resume": "",
+    "tasks": [
+      {
+        "content": "Gestion de projets : Chargée de projet d'agrandissement des locaux ( 1600m2): co-création, coordination et contrôle des travaux, management des déménagements internesActrice de la formalisation des valeurs et des règles : co-construction, rétro-planning d'application, suivi de réalisation. Responsable d'intégration des collaborateurs : création d'un parcours d'On boarding complet. Organisation et coordination d’événements"
+      },
+      {
+        "content": "Communication interne / externe : Chargée de communication interne (création de Newsletter, de Display slides, Intranet Confluence). Social network. Support organisationnel à l'équipe Marketing"
+      },
+      {
+        "content": "Facilities : Assistanat de direction, de management, d’équipes. Organisation des déplacements, réunions, conférences. Support à la méthodologie Agile. Services généraux. IT support, Office Help Desk (Jira)"
+      },
+      {
+        "content": "Culture d’entreprise : Garant de la QVT par l'organisation d'événements Team Building quotidiens / d’entreprise ponctuels ou annuels. Organisateur d'un plan de formation visant au développement des compétences individuelles pour un objectif d'entreprise. Accompagnateur du changement : co-construction pour l'aménagement des locaux, développement ( co-développement, chapeau de Bono, etc), application des process"
+      },
+      {
+        "content": "Support RH : Support au recrutement. Maintient à jour de l'affichage légal"
+      },
+      {
+        "content": "Santé et sécurité : Agent de prévention ( sécurité, bonne santé, à éco-responsabilité ). Suivi des formations (SST, guides d’évacuation, habilitations électriques...). Légal ( plans, exercices d’évacuation, document unique, maintient en conformité des locaux et systèmes de sécurité)"
+      },
+      {
+        "content": "Préservation : Maintenance des locaux en coordonnant les prestataires"
+      }
+    ],
+    "tools": [
+      { "content": "Gestion de projet : Atlassian (Confluence, / Jira)" },
+      { "content": "Drives d’équipe, Trello, Slack, Egencia" },
+      { "content": "Administration : Apple suite, Suite office" },
+      { "content": "Création : keynote, iBooks Author" }
+    ]
+  },
+  {
+    "xpId": 3,
+    "job": "Office Preservation & Operation specialist",
+    "company": "Apple",
+    "companyType": "Vente de produits-informatique",
+    "startDate": "octobre 2012",
+    "endDate": "fevrier 2016",
+    "place": "Lyon",
+    "resume": "Opérationnelle et attentive aux collaborateurs par propension, j'ai naturellement évolué lors de la création du poste d’Office Manager. Mes missions étaient transverses et en relation permanente avec les différentes profils en interne et intervenants en externe.",
+    "tasks": [
+      {
+        "content": "Événements : Garant de la QVT par l'organisation d'événements Team Building ponctuels ou annuels. Organisateur d'événements tels que les sorties de produits, les meetings, formations"
+      },
+      {
+        "content": "Communication : Rédaction de dossiers et supports de suivi. Création de support de communication interne"
+      },
+      {
+        "content": "Formations : Établissement du plan de formation en sécurité. Formation des nouveaux collaborateurs lors du On boarding de 3 semaines"
+      },
+      {
+        "content": "Facilities: Soutien à la gestion administrative. Support aux Ressources Humaines (suivi des rendez-vous avec la médecine du travail, la planification, le recrutement)"
+      },
+      {
+        "content": "Data:Conception d’une base data pour la gestion du matériel."
+      },
+      {
+        "content": "Services généraux : Référent interne pour les projets : transformation de la climatisation générale, installation d'un rideau d'air chaud, et réfection globale de la salle business. Préservation du magasin en respect des standards de la marque et de la sécurité (Visual Merchandising). Gestion des prestataires, de la maintenance."
+      },
+      { "content": "Support IS&T: membre de la Retail Tech Team" },
+      {
+        "content": "Santé et sécurité : Agent de prévention ( sécurité, bonne santé, à éco-responsabilité ). Garant du domaine légal ( plans, exercices d’évacuation, document unique, maintient en conformité des locaux et systèmes de sécurité).Accueil des visiteurs dans les normes de sécurité"
+      }
+    ],
+    "tools": [
+      { "content": "Apple Suite" },
+      { "content": "FilMakerPro" },
+      { "content": "Keynote" },
+      { "content": "iBookAuthor" }
+    ]
+  },
+  {
+    "xpId": 4,
+    "job": "Specialist",
+    "company": "Apple",
+    "companyType": "Vente de produits-informatique",
+    "startDate": "Mai 2011",
+    "endDate": "Sept 2012",
+    "place": "Lyon",
+    "resume": "Apple addict depuis mon premier ordinateur, je n'ai pu que saisir l'opportunité de travailler pour cette marque. La première étape a été de prodiguer des conseils à la vente, en m'axant sur une découverte du besoin client",
+    "tasks": [
+      {
+        "content": "Spécialisation en téléphonie (suivi des abonnements, formation des équipes) et financements"
+      },
+      { "content": "Intégration dans l'équipe de Visual merchandising" },
+      { "content": "Intégration dans l'équipede Retail Technologies" }
+    ],
+    "tools": [
+      { "content": "Apple Suite" },
+      { "content": "Keynote, iBooks Author" }
+    ]
+  },
+  {
+    "xpId": 5,
+    "job": "VJ ( Projections vidéo murales)",
+    "company": "La Demeure du Chaos",
+    "companyType": "Lieu d'art",
+    "startDate": 2008,
+    "endDate": 2010,
+    "place": "St-Romain-Au-Mont-d'Or",
+    "resume": "Créatrice de ViDjing sur Modul8. Oeuvre éphémère à l'échelle d'un immeuble, la vidéo projection sur les murs des villes offre d'exprimer sa créativité. Cela a été le cas notamment lors de la participation à l'international Mapping Festival de Genève",
+    "tasks": [
+      { "content": "Produire les images à prejeter" },
+      { "content": "mixer en live" },
+      { "content": "Communiquer sur la Demeure du Chaos" }
+    ],
+    "tools": [{ "content": "Modul8" }, { "content": "After Effect" }]
+  },
+  {
+    "xpId": 6,
+    "job": "Assistante éditorial",
+    "company": "Arprice",
+    "companyType": "Argus de ventes d'art",
+    "startDate": 2007,
+    "endDate": 2008,
+    "place": "St-Romain-Au-Mont-d'Or",
+    "resume": "Avoir l'opportunité de travailler dans une lieu tel que La Demeure du Chaos est une expérience extraordinaire. C'est travailler au coeur d'une oeuvre en traitant les data des ventes aux enchères d’oeuvres d’art et être en lien avec les artistes pour créer leur biographie.",
+    "tasks": [
+      { "content": "Recenser les ventes d'oeuvres d'art" },
+      { "content": "Alimenter la base de données" },
+      { "content": "Réaliser des biographie d'artistes" }
+    ],
+    "tools": [{ "content": "Logiciel interne" }]
+  },
+  {
+    "xpId": 7,
+    "job": "Régleuse",
+    "company": "IPS",
+    "companyType": "Imprimerie rotative",
+    "startDate": 2005,
+    "endDate": 2007,
+    "place": "Jassans",
+    "resume": "Technicienne, contrôle de qualité",
+    "tasks": [
+      { "content": "Régler les machines " },
+      { "content": "Maintenir l'etat d'usage des machines" },
+      { "content": "Assurer le paquetage et le depart d'expédition" }
+    ],
+    "tools": [{ "content": "Imprimantes rotatives" }]
+  },
+  {
+    "xpId": 8,
+    "job": "Technicienne, technologies de l'information et de la communication",
+    "company": "Productions institutionnelles, télévision, cinéma",
+    "companyType": "Audiovisuel",
+    "startDate": 1998,
+    "endDate": 2004,
+    "place": "Ile de France, Loiret",
+    "resume": "Le choix de l'audiovisuel s'est fait par passion. En tant que technicien j'ai été active sur les différents postes à chaque étape de réalisation des films.",
+    "tasks": [
+      { "content": "Rédaction" },
+      { "content": "Réalisation, scripte" },
+      { "content": "Prise de vue et post-production (montage, infographie)" },
+      {
+        "content": "Organisation de tournages : préparation logistique, assistanat, gestion humaine"
+      }
+    ],
+    "tools": [
+      {
+        "content": "Création : Création de support de communication (Photoshop, Indesign, iBookauthor)"
+      },
+      { "content": "Montage numérique ( Avid, Final Cut, After Effect)" }
+    ]
+  },
+  {
+    "xpId": 9,
+    "job": "Intervenante spécialisée dans l'audiovisuel",
+    "company": "Ministere de l'Education Nationale et de la Jeunesse",
+    "companyType": "Enseignement",
+    "startDate": 1998,
+    "endDate": 1999,
+    "place": "Loiret",
+    "resume": "L’enseignement peut-il être réalisé de manière ludique ? C’est ce que nous avons tenté de faire avec les enseignants dans la mise en place d'un projet annuel. Nous avons réalisé des films publicitaires intégrant toutes les matières (rédaction du synospis en Français, calcul des durées en mathématiques,ect ). En apportant mon regard technique, nous avons progressé avec succès dans toutes les étapes, depuis l'écriture, jusqu'à la diffusion. Data : création d'un base de données pour la bibliothèque.",
+    "tasks": [
+      { "content": "Etre référent technique pour la réalisation adiovisuelle" },
+      { "content": "Etre support de gestion de plusieurs classes" },
+      { "content": "gestion de la bibiotheque" }
+    ],
+    "tools": [
+      { "content": "Materiel audiovisuel numérique" },
+      { "content": "Logiciel interne" }
+    ]
+  }
+]
