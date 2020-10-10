@@ -21,7 +21,7 @@ body {
   grid-area: head;
   background-color: black;
   background-size: contain;
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 #main {
@@ -39,7 +39,6 @@ nav ul {
 nav ul li {
   display: flex;
   text-decoration: none;
-  color: rgb(248, 7, 196);
   padding: 2px;
 }
 
