@@ -1,0 +1,21 @@
+#newbie {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  background-color: pink;
+  width: 200px;
+  height: 100%;
+  padding: 50px;
+  color: crimson;
+}
+
+.internalLabel span {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: auto;
+}

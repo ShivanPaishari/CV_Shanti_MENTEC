@@ -2,10 +2,8 @@ import React from "react";
 
 //design
 import { setColorCard } from "../style/setColorCard.js";
-
 import "../style/card.css";
 import "../style/setColorCard.js";
-import "../style/card.css";
 
 function ExperienceCard(props) {
   const experiences = props.experiences;
@@ -13,7 +11,7 @@ function ExperienceCard(props) {
 
   const tasksList = experiences.tasks;
   const task = tasksList.map((task) => {
-    if (tasksList != []) {
+    if (tasksList !== []) {
       return (
         <div>
           <p>{task.content}</p>

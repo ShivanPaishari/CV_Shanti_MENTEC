@@ -1,0 +1,39 @@
+[
+  {
+    "techno": [
+      { "content": "NodeJS" },
+      { "content": "MySQL" },
+      { "content": "Scrapi" },
+      { "content": "Postman" }
+    ],
+    "technotype": "Back End"
+  },
+  {
+    "techno": [
+      { "content": "React" },
+      { "content": "Javascript" },
+      { "content": "HTML" },
+      { "content": "CSS" }
+    ],
+    "technotype": "Front Office"
+  },
+  {
+    "techno": [
+      { "content": "VSC" },
+      { "content": "Github" },
+      { "content": "Atlassian : Confluence & Jira" },
+      { "content": "Air Table" },
+      { "content": "GitBook" },
+      { "content": "Todoist" },
+      { "content": "Trello" },
+      { "content": "Photoshop" },
+      { "content": "In Design" },
+      { "content": "Apple Suite" },
+      { "content": "Office Suite" },
+      { "content": "iBooks Author" },
+      { "content": "Logiciels de montage vidéo" },
+      { "content": "Autocad" }
+    ],
+    "technotype": "Autres"
+  }
+]
