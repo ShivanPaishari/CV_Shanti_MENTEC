@@ -8,8 +8,6 @@ import { useState } from "react";
 import "../style/experiences.css";
 
 function Experience() {
-  console.log("json", experiences);
-
   const [choosenXpState, setChoosenXpState] = useState();
 
   function handleChangeTitle(event) {
@@ -51,8 +49,10 @@ function Experience() {
   }
 
   return (
-    <div class="experiences">
-      <h3>Choisissez une expérience pour en connaitre les détails </h3>
+    <div className="experiences">
+      <p className="intro">
+        Choisissez une expérience pour en connaitre les détails{" "}
+      </p>
       <select id="selectXp" onChange={(event) => handleChangeTitle(event)}>
         <option value="">Tous les postes</option>
         {experiences.map((experience) => {

@@ -22,7 +22,7 @@ function TechnoCard(props) {
   });
 
   return (
-    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
+    <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{technoProps.technotype}</h2>
       <div>
         <p className="internalLabel">

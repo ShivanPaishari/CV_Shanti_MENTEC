@@ -6,6 +6,7 @@
   text-decoration: none;
   color: crimson;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 #menu a:hover {
   color: palevioletred;

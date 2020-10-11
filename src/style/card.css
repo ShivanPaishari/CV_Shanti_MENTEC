@@ -22,6 +22,11 @@
   color: gray;
 }
 
+.intro {
+  color: rgb(122, 122, 122);
+  padding: 5px;
+}
+
 /* __________mise en page des etiquettes _____*/
 .internalLabel {
   background-color: whitesmoke;
@@ -32,6 +37,7 @@
   font-size: 0.85em;
   text-align: justify;
 }
+/* __________responsive _____*/
 
 @media screen and (max-width: 768px) {
   .cards {

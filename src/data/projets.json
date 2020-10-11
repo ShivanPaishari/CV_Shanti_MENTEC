@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Wall King Art",
+    "link": "https://wildcodeschool.github.io/Lyon-js-202005-project-anonymous/",
+    "description": " Site sur le Street Art Lyonnais, réalisé sur 7 jours dédiés durant le 1er mois de formation.",
+    "details": " HTML/CSS/Javascript vanillia, méthode Kanban."
+  },
+  {
+    "title": "Squizzer",
+    "description": " Site de jeu type Trivial Poursuit, réalisé en 9 jours.",
+    "details": " React, appel d'API, méthode Agile."
+  },
+  {
+    "title": "Sens Interdits",
+    "description": "Projet client de refonte du site Sens Interdit, présentant la programmation de la Biennale Internationale de théâtre en Rhône-Alpes, réalisé sur 10 semaines. Le rendu propose un front-Office, un back-office, ainsi qu'un back-end.",
+    "details": " HTML/CSS/Javascript/ React avec Scrapi et Gatsby, méthode Agile."
+  }
+]

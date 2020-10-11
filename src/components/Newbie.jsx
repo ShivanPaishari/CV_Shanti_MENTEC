@@ -1,50 +1,47 @@
 import React from "react";
+import { useState } from "react";
+
 //modules
 import techno from "../data/techno.json";
+import projets from "../data/projets.json";
 import TechnoCard from "./TechnoCard";
+import ProjectCard from "./ProjectCard";
 //design
 import "../style/card.css";
 import "../style/newbie.css";
-import { useState } from "react";
 
 function Newbie() {
   const [filteredState, setFilteredState] = useState();
 
-  function handleChangeFront(event, techno) {
-    setFilteredState("Front Office");
+  function handleChangeTools(event) {
+    setFilteredState("tools");
   }
 
-  function handleChangeBack(event, techno) {
-    setFilteredState("Back End");
+  function handleChangeProjects(event) {
+    setFilteredState("projects");
   }
 
-  function handleChangeOther(event, techno) {
-    setFilteredState("Autres");
+  function selectedState() {
+    if (filteredState === undefined) {
+      return <p className="intro">Selectionnez une thématique</p>;
+    } else if (filteredState === "tools") {
+      return techno.map((item) => <TechnoCard techno={item} />);
+    } else if (filteredState === "projects") {
+      return projets.map((item) => <ProjectCard projects={item} />);
+    }
   }
 
   return (
     <div id="newbie">
       <aside>
         <div>
-          <h3>Outils</h3>
-          <ul onClick={(event) => handleChangeFront(event)}>Front Office</ul>
-          <ul onClick={(event) => handleChangeBack(event)}>Back Office</ul>
-          <ul onClick={(event) => handleChangeOther(event)}>Autres</ul>
+          <h3 onClick={(event) => handleChangeTools(event)}>Outils</h3>
         </div>
         <div>
-          <h3>Projets</h3>
-          <ul>Projet Wall King Art</ul>
-          <ul>Projet Squizz</ul>
-          <ul>Projet Sens Interdits</ul>
+          <h3 onClick={(event) => handleChangeProjects(event)}>Projets</h3>
         </div>
       </aside>
-      <main>
-        {filteredState === undefined
-          ? "Selectionnez une thématique"
-          : techno
-              .filter((item) => filteredState === item.technotype)
-              .map((item) => <TechnoCard techno={item} />)}
-      </main>
+      <main>{selectedState()}</main>
     </div>
   );
 }
