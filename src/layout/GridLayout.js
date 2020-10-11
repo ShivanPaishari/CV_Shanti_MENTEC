@@ -9,10 +9,13 @@ import "../style/app.css";
 
 function GridLayout() {
   return (
-    <div className="gridLayout">
-      <Header />
-      <Main />
-      <Footer />
+    <div id="nav-mobile-overlay">
+      <div className="gridLayout">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+      <script src="src/js/menu.js"></script>
     </div>
   );
 }

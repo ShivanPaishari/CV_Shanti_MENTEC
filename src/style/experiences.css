@@ -1,0 +1,40 @@
+.logoXp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10%;
+  position: relative;
+}
+
+.logoXp img {
+  height: 100px;
+  width: 100px;
+}
+
+.experiences {
+  margin: 50 px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#selectXp {
+  min-width: 300px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    margin: auto;
+  }
+  #selectXp {
+    width: 300px;
+  }
+  .logoXp {
+    flex-direction: column;
+    margin: auto;
+  }
+  .logoXp img {
+    margin-top: 8%;
+  }
+}
