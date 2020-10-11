@@ -30,4 +30,11 @@
   #selectXp {
     width: 300px;
   }
+  .logoXp {
+    flex-direction: column;
+    margin: auto;
+  }
+  .logoXp img {
+    margin-top: 8%;
+  }
 }

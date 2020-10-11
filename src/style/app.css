@@ -11,8 +11,8 @@ body {
   display: grid;
   grid-template-areas:
     "head head"
-    "main  main"
-    "foot  foot";
+    "main main"
+    "foot foot";
   grid-template-rows: 200px 900px 30px;
   grid-template-columns: 350px 1fr;
 }
@@ -20,26 +20,11 @@ body {
 #header {
   grid-area: head;
   background-color: black;
-  background-size: contain;
-  padding-left: 50px;
 }
 
 #main {
   background-color: black;
   grid-area: main;
-}
-
-nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: right;
-  justify-content: center;
-  padding: 20px;
-}
-nav ul li {
-  display: flex;
-  text-decoration: none;
-  padding: 2px;
 }
 
 footer {
