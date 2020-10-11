@@ -1,7 +1,10 @@
 import React from "react";
+//data
 import experiences from "../data/experiences.json";
+//modules
 import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
+//design
 import "../style/experiences.css";
 
 function Experience() {
