@@ -8,7 +8,8 @@ import TechnoCard from "./TechnoCard";
 import ProjectCard from "./ProjectCard";
 //design
 import "../style/card.css";
-import "../style/newbie.css";
+import "../style/smallcard.css";
+import "../style/app.css";
 
 function Newbie() {
   const [filteredState, setFilteredState] = useState();
@@ -32,13 +33,11 @@ function Newbie() {
   }
 
   return (
-    <div id="newbie">
+    <div className="internalmain">
       <aside>
         <div>
-          <h3 onClick={(event) => handleChangeTools(event)}>Outils</h3>
-        </div>
-        <div>
-          <h3 onClick={(event) => handleChangeProjects(event)}>Projets</h3>
+          <ul onClick={(event) => handleChangeTools(event)}>Outils</ul>
+          <ul onClick={(event) => handleChangeProjects(event)}>Projets</ul>
         </div>
       </aside>
       <main>{selectedState()}</main>
