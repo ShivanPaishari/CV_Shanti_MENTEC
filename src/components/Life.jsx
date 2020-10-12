@@ -28,7 +28,6 @@ function Life() {
   function handleChangeMore(event) {
     setFilteredState("more");
   }
-  console.log("status life ", filteredState);
 
   function selectedState() {
     if (filteredState === undefined) {
@@ -40,8 +39,8 @@ function Life() {
         <RecommendationCard recommendation={item} />
       ));
     } else if (filteredState === "volunteering") {
-      return volunteering.map((item) => (
-        <VolunteeringCard volunteering={item} />
+      return volunteering.map((elem) => (
+        <VolunteeringCard volunteering={elem} />
       ));
     } else if (filteredState === "more") {
       return <p> need to be done</p>;
