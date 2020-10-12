@@ -4,26 +4,29 @@ import React from "react";
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/setColorCard.js";
-import "../style/newbie.css";
 
 function ProjectCard(props) {
-  const projectProps = props.projects;
-  const linkWKA = projectProps.link;
+  const project = props.projects;
+  const linkWKA = project.link;
   console.log("props de project", linkWKA);
 
   function link() {
-    if (projectProps.link != undefined) {
-      return <a href={linkWKA}>Voir le site</a>;
+    if (project.link != undefined) {
+      return (
+        <a href={linkWKA} target="_blank">
+          Voir le site
+        </a>
+      );
     }
   }
 
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
-      <h2>{projectProps.title}</h2>
+      <h2>{project.title}</h2>
       <p className="links">{link()}</p>
       <div>
-        <p className="internalLabel">{projectProps.description} </p>
-        <p className="internalLabel">{projectProps.details} </p>
+        <p className="internalLabel">{project.description} </p>
+        <p className="internalLabel">{project.details} </p>
       </div>
       <p> +Ajouter une carte</p>
     </div>

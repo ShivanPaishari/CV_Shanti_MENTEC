@@ -38,3 +38,27 @@ footer {
   background-color: black;
   text-align: center;
 }
+aside {
+  margin-top: 15px;
+  background-color: pink;
+  width: 180px;
+  height: 100vh;
+  padding: 10px;
+  color: crimson;
+}
+
+aside ul {
+  padding: 10px;
+}
+/* __________responsive _____*/
+
+@media screen and (max-width: 1200px) {
+  aside div {
+    display: flex;
+    flex-direction: row;
+  }
+  aside {
+    width: 100%;
+    height: 50px;
+  }
+}

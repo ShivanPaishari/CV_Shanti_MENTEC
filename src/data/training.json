@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Développeur Web et Web mobile",
+    "school": "Wild Code School",
+    "startDate": "Mai 2020",
+    "endDate": "Juillet 2021",
+    "type": "Reconversion",
+    "container": [
+      {
+        "language": [
+          { "language1": "HTML" },
+          { "language2": "CSS, boostrap, reactstrap" },
+          { "language3": "JavaScript, Node.js, REACT" },
+          { "language4": "MySQL, Express" },
+          { "language5": "CMS  strapi." }
+        ],
+        "tools": "GitHub, code sandbox, Visual Studio Code, PostMan, PHPmyadmin, Scrapi, Gatsby",
+        "méthode": "Methode Agile"
+      }
+    ]
+  },
+  {
+    "title": "Outils de gestion de projets en Agile",
+    "school": "Cosmo Tech",
+    "startDate": "2018",
+    "endDate": "2018",
+    "type": "Formations courtes en interne",
+    "container": [
+      { "theme1": "Outils d'accompagnement au changement" },
+      { "theme2": "Methodologie Agile, Lean" },
+      { "theme3": "Communication graphique" }
+    ]
+  },
+  {
+    "title": "Management",
+    "school": "Cosmo Tech",
+    "startDate": "2017",
+    "endDate": "2017",
+    "type": "Formation sur 1 an en interne",
+    "container": [
+      {
+        "theme1": "Coaching au management sur 10 mois avec l'ensemble des managers."
+      },
+      {
+        "theme2": "Apprentissage d'outils d'aide à la relation et co-développement"
+      },
+      { "theme3": "Serious Games" },
+      { "theme4": "Animation de réunions" }
+    ]
+  },
+  {
+    "title": "Animation d'activités de formation",
+    "school": "Apple",
+    "startDate": "2015",
+    "endDate": "2015",
+    "type": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants",
+    "container": [
+      {
+        "theme1": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants"
+      },
+      { "theme2": "Technique d’animation de réunion" }
+    ]
+  },
+  {
+    "title": "Technicien d'étude en Bâtiment, dessinateur",
+    "school": "AFPA",
+    "startDate": "2008",
+    "endDate": "2009",
+    "type": "Reconversion, 1 ans",
+    "container": [{ "theme1": "Autocad" }]
+  },
+  {
+    "title": "Technicien de l'image, option Montage vidéo'",
+    "school": "EMC, Malakoff",
+    "startDate": "1995",
+    "endDate": "1997",
+    "type": "Formation initiale",
+    "container": [{ "theme1": "Avid" }, { "theme2": "Premiere" }]
+  },
+  {
+    "title": "Technicien de la communication, audiovisuel",
+    "school": "EESATI, école eureopéenne Supérieure de l'Image, Poitiers",
+    "startDate": "1997",
+    "endDate": "1998",
+    "type": "Formation initiale",
+    "container": []
+  },
+  {
+    "title": "Art et communication",
+    "school": "Ecole Nationale des Beaux-Arts, Quimper",
+    "startDate": "1995",
+    "endDate": "1997",
+    "type": "Formation initiale",
+    "container": []
+  },
+  {
+    "certifications": [
+      {
+        "certification1": "Certifications Santé et Sécurité : Sauveteur secouriste du travail, Guide d’évacuation, Prévention des Risques liés à l’Activité Physique."
+      },
+      {
+        "certification2": "Habilitation électrique BR : chargé d’intervention général, basse tension"
+      }
+    ]
+  }
+]

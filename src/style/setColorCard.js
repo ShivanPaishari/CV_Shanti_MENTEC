@@ -8,4 +8,3 @@ export function setColorCard() {
 }
 
 var randomColor = setColorCard();
-console.log("color dans la fonction set", randomColor);

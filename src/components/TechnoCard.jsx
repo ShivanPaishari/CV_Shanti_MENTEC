@@ -4,7 +4,7 @@ import React from "react";
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/setColorCard.js";
-import "../style/newbie.css";
+import "../style/smallcard.css";
 
 function TechnoCard(props) {
   const technoProps = props.techno;
