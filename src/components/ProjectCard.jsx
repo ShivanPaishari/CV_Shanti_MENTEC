@@ -11,9 +11,9 @@ function ProjectCard(props) {
   console.log("props de project", linkWKA);
 
   function link() {
-    if (project.link != undefined) {
+    if (project.link !== undefined) {
       return (
-        <a href={linkWKA} target="_blank">
+        <a href={linkWKA} target="_blank" rel="noopener noreferrer">
           Voir le site
         </a>
       );

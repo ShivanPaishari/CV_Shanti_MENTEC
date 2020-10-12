@@ -7,8 +7,6 @@ import "../style/setColorCard.js";
 
 function ExperienceCard(props) {
   const experiences = props.experiences;
-  console.log("props de experiences", experiences);
-
   const tasksList = experiences.tasks;
   const task = tasksList.map((task) => {
     if (tasksList !== []) {
