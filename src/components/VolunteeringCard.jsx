@@ -4,21 +4,20 @@ import React from "react";
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/setColorCard.js";
+import "../style/smallcard.css";
 
 function VolunteeringCard(props) {
-  const volunteering = props.volunteering;
-  console.log("volunteering", volunteering);
 
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
-      <h2>{volunteering.organization}</h2>
+      <h2>{props.volunteering.organization}</h2>
       <div className="internalLabel">
-        <p>{volunteering.theme} </p>
-        <p>{volunteering.date} </p>
-        <p>{volunteering.container} </p>
+        <h3>{props.volunteering.theme} </h3>
+        <p>{props.volunteering.date} </p>
+        <p>{props.volunteering.container} </p>
       </div>
       <div className="internalLabel">
-        <p>{volunteering.title} </p>
+        <p>{props.volunteering.title} </p>
       </div>
       <p> +Ajouter une carte</p>
     </div>

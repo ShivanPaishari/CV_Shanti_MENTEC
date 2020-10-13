@@ -4,7 +4,8 @@
     "school": "Wild Code School",
     "startDate": "Mai 2020",
     "endDate": "Juillet 2021",
-    "type": "Reconversion",
+    "type": "continuous",
+    "sort": "Reconversion",
     "container": [
       {
         "language": [
@@ -24,7 +25,8 @@
     "school": "Cosmo Tech",
     "startDate": "2018",
     "endDate": "2018",
-    "type": "Formations courtes en interne",
+    "type": "continuous",
+    "sort": "Formations courtes en interne",
     "container": [
       { "theme1": "Outils d'accompagnement au changement" },
       { "theme2": "Methodologie Agile, Lean" },
@@ -36,7 +38,8 @@
     "school": "Cosmo Tech",
     "startDate": "2017",
     "endDate": "2017",
-    "type": "Formation sur 1 an en interne",
+    "type": "continuous",
+    "sort": "Formation sur 1 an en interne",
     "container": [
       {
         "theme1": "Coaching au management sur 10 mois avec l'ensemble des managers."
@@ -53,7 +56,8 @@
     "school": "Apple",
     "startDate": "2015",
     "endDate": "2015",
-    "type": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants",
+    "type": "continuous",
+    "sort": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants",
     "container": [
       {
         "theme1": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants"
@@ -66,15 +70,17 @@
     "school": "AFPA",
     "startDate": "2008",
     "endDate": "2009",
-    "type": "Reconversion, 1 ans",
+    "type": "continuous",
+    "sort": "Reconversion, 1 ans",
     "container": [{ "theme1": "Autocad" }]
   },
   {
-    "title": "Technicien de l'image, option Montage vidéo'",
+    "title": "Technicien de l'image, option Montage vidéo",
     "school": "EMC, Malakoff",
     "startDate": "1995",
     "endDate": "1997",
-    "type": "Formation initiale",
+    "type": "initial",
+    "sort": "Formation initiale",
     "container": [{ "theme1": "Avid" }, { "theme2": "Premiere" }]
   },
   {
@@ -82,7 +88,8 @@
     "school": "EESATI, école eureopéenne Supérieure de l'Image, Poitiers",
     "startDate": "1997",
     "endDate": "1998",
-    "type": "Formation initiale",
+    "type": "initial",
+    "sort": "Formation initiale",
     "container": []
   },
   {
@@ -90,17 +97,8 @@
     "school": "Ecole Nationale des Beaux-Arts, Quimper",
     "startDate": "1995",
     "endDate": "1997",
-    "type": "Formation initiale",
+    "type": "initial",
+    "sort": "Formation initiale",
     "container": []
-  },
-  {
-    "certifications": [
-      {
-        "certification1": "Certifications Santé et Sécurité : Sauveteur secouriste du travail, Guide d’évacuation, Prévention des Risques liés à l’Activité Physique."
-      },
-      {
-        "certification2": "Habilitation électrique BR : chargé d’intervention général, basse tension"
-      }
-    ]
   }
 ]

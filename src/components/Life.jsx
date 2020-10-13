@@ -15,10 +15,12 @@ import "../style/app.css";
 function Life() {
   const [filteredState, setFilteredState] = useState();
 
-  function handleChangeTraining(event) {
-    setFilteredState("training");
+  function handleChangeInitialTraining(event) {
+    setFilteredState("initial");
   }
-
+  function handleChangeContinuousTraining(event) {
+    setFilteredState("continuous");
+  }
   function handleChangeRecommendation(event) {
     setFilteredState("recommendation");
   }
@@ -32,15 +34,21 @@ function Life() {
   function selectedState() {
     if (filteredState === undefined) {
       return <p className="intro">Selectionnez une thématique</p>;
-    } else if (filteredState === "training") {
-      return training.map((item) => <TrainingCard training={item} />);
+    } else if (filteredState === "initial") {
+      return training
+        .filter((forminit) => filteredState === forminit.type)
+        .map((forminit) => <TrainingCard training={forminit} />);
+    } else if (filteredState === "continuous") {
+      return training
+        .filter((formcont) => filteredState === formcont.type)
+        .map((formcont) => <TrainingCard training={formcont} />);
     } else if (filteredState === "recommendation") {
       return recommendation.map((item) => (
         <RecommendationCard recommendation={item} />
       ));
     } else if (filteredState === "volunteering") {
-      return volunteering.map((elem) => (
-        <VolunteeringCard volunteering={elem} />
+      return volunteering.map((volunteer) => (
+        <VolunteeringCard volunteering={volunteer} />
       ));
     } else if (filteredState === "more") {
       return <p> need to be done</p>;
@@ -51,14 +59,24 @@ function Life() {
     <div className="internalmain">
       <aside>
         <div>
-          <ul onClick={(event) => handleChangeTraining(event)}>Formation</ul>
-          <ul onClick={(event) => handleChangeRecommendation(event)}>
+          <div id="training">
+            <h4>Formations</h4>
+            <div>
+              <ul onClick={(event) => handleChangeInitialTraining(event)}>
+                Initiales
+              </ul>
+              <ul onClick={(event) => handleChangeContinuousTraining(event)}>
+                Continues
+              </ul>
+            </div>
+          </div>
+          <h4 onClick={(event) => handleChangeRecommendation(event)}>
             Recommandations
-          </ul>
-          <ul onClick={(event) => handleChangeVolunteering(event)}>
+          </h4>
+          <h4 onClick={(event) => handleChangeVolunteering(event)}>
             Bénévolat
-          </ul>
-          <ul onClick={(event) => handleChangeMore(event)}>Mais encore...</ul>
+          </h4>
+          <h4 onClick={(event) => handleChangeMore(event)}>Mais encore...</h4>
         </div>
       </aside>
       <main>{selectedState()}</main>
