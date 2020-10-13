@@ -48,7 +48,7 @@ main {
 /* __________responsive _____*/
 
 @media screen and (max-width: 1200px) {
-  main {
+  .internalmain {
     display: flex;
     flex-direction: column;
   }
@@ -71,6 +71,12 @@ main {
     padding-bottom: 0px;
   }
   .internalmain {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  main {
     display: flex;
     flex-direction: column;
   }

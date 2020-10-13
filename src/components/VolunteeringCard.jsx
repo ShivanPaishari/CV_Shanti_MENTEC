@@ -7,6 +7,7 @@ import "../style/setColorCard.js";
 import "../style/smallcard.css";
 
 function VolunteeringCard(props) {
+
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{props.volunteering.organization}</h2>
