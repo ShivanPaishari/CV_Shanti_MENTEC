@@ -6,5 +6,3 @@ export function setColorCard() {
   }
   return color;
 }
-
-var randomColor = setColorCard();
