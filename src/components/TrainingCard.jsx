@@ -7,9 +7,9 @@ import "../style/setColorCard.js";
 import "../style/smallcard.css";
 
 function TrainingCard(props) {
-  const training = props.training;
-  console.log("trainign", training.container);
-  //let details = {training.container.map((item)=> Object.key)}
+  const training = props.training;  
+      
+        
 
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
@@ -20,8 +20,11 @@ function TrainingCard(props) {
           {training.startDate} - {training.endDate}
         </p>
         <p>{training.sort}</p>
-      </div>
-      <div className="internalLabel"></div>
+        </div>
+        <div className="internalLabel">
+          {training.container.map (item=>(<p>{item.key}</p>))}
+        </div>
+
       <p> +Ajouter une carte</p>
     </div>
   );
