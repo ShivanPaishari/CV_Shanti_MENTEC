@@ -6,19 +6,7 @@
     "endDate": "Juillet 2021",
     "type": "continuous",
     "sort": "Reconversion",
-    "container": [
-      {
-        "language": [
-          { "language1": "HTML" },
-          { "language2": "CSS, boostrap, reactstrap" },
-          { "language3": "JavaScript, Node.js, REACT" },
-          { "language4": "MySQL, Express" },
-          { "language5": "CMS  strapi." }
-        ],
-        "tools": "GitHub, code sandbox, Visual Studio Code, PostMan, PHPmyadmin, Scrapi, Gatsby",
-        "méthode": "Methode Agile"
-      }
-    ]
+    "container": [{"key":"HTML."}, {"key":"CSS, boostrap, reactstrap."},{"key":"JavaScript, Node.js, REACT."}, {"key":"MySQL, Express."},{"key":"CMS  strapi."}, {"key":"GitHub, code sandbox, Visual Studio Code, PostMan, PHPmyadmin, Scrapi, Gatsby."},{"key":"Méthode: Methode Agile."}]
   },
   {
     "title": "Outils de gestion de projets en Agile",
@@ -27,11 +15,7 @@
     "endDate": "2018",
     "type": "continuous",
     "sort": "Formations courtes en interne",
-    "container": [
-      { "theme1": "Outils d'accompagnement au changement" },
-      { "theme2": "Methodologie Agile, Lean" },
-      { "theme3": "Communication graphique" }
-    ]
+    "container": [{"key":"Outils d'accompagnement au changement."},{"key":"Methodologie Agile, Lean."},{"key":"Communication graphique."}]
   },
   {
     "title": "Management",
@@ -40,16 +24,7 @@
     "endDate": "2017",
     "type": "continuous",
     "sort": "Formation sur 1 an en interne",
-    "container": [
-      {
-        "theme1": "Coaching au management sur 10 mois avec l'ensemble des managers."
-      },
-      {
-        "theme2": "Apprentissage d'outils d'aide à la relation et co-développement"
-      },
-      { "theme3": "Serious Games" },
-      { "theme4": "Animation de réunions" }
-    ]
+    "container": [{"key":"Coaching au management sur 10 mois avec l'ensemble des managers"},{"key":"Apprentissage d'outils d'aide à la relation et co-développement"},{"key":"Serious Games"},{"key":"Animation de réunions"}]
   },
   {
     "title": "Animation d'activités de formation",
@@ -57,13 +32,8 @@
     "startDate": "2015",
     "endDate": "2015",
     "type": "continuous",
-    "sort": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants",
-    "container": [
-      {
-        "theme1": "Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants"
-      },
-      { "theme2": "Technique d’animation de réunion" }
-    ]
+    "sort": "Formations courtes en interne",
+    "container": [{"key":"Techniques de préparation et d’animation d’activités de formations des nouveaux arrivants."},{"key":"Technique d’animation de réunion."}]
   },
   {
     "title": "Technicien d'étude en Bâtiment, dessinateur",
@@ -72,7 +42,7 @@
     "endDate": "2009",
     "type": "continuous",
     "sort": "Reconversion, 1 ans",
-    "container": [{ "theme1": "Autocad" }]
+    "container": [{"key":"Autocad."}]
   },
   {
     "title": "Technicien de l'image, option Montage vidéo",
@@ -81,7 +51,7 @@
     "endDate": "1997",
     "type": "initial",
     "sort": "Formation initiale",
-    "container": [{ "theme1": "Avid" }, { "theme2": "Premiere" }]
+    "container": [{"key":"Avid"},{"key": "Premiere"}]
   },
   {
     "title": "Technicien de la communication, audiovisuel",
@@ -90,7 +60,7 @@
     "endDate": "1998",
     "type": "initial",
     "sort": "Formation initiale",
-    "container": []
+    "container": [{"key":"Vidéo Art, peinture, sculpture, photographie"}]
   },
   {
     "title": "Art et communication",
@@ -99,6 +69,6 @@
     "endDate": "1997",
     "type": "initial",
     "sort": "Formation initiale",
-    "container": []
+    "container": [{"key":"Peinture, dessin"}]
   }
 ]
