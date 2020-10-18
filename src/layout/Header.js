@@ -1,22 +1,25 @@
 //imports
 import React from "react";
-import menu from "../js/menu.js";
+import { handleOnclick } from "../js/menu.js";
 //import router
 import { Link } from "react-router-dom";
 //import design
 import "../style/app.css";
 import "../style/header.css";
 
-//import des composants
-
 function Header() {
+  function handleOnclick(event) {
+    event.preventDefault();
+    document.getElementById("menu").className += "open";
+  }
+
   return (
     <div id="header">
       <div id="titles">
         <p>Shanti Mentec</p>
         <h2>Developpeuse Web</h2>
         <p>React, Node.js</p>
-        <div id="burger">
+        <div id="burger" onClick={(event) => handleOnclick(event)}>
           <span></span>
           <span></span>
           <span></span>
@@ -24,6 +27,7 @@ function Header() {
       </div>
       <div>
         <nav id="menu">
+          <h2></h2>
           <ul>
             <li>
               <Link to="/about">Je suis </Link>

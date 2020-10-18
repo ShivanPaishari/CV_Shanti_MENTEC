@@ -1,15 +1,17 @@
 //imports
 import React from "react";
+
 //import des composants
 import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 //import css
 import "../style/app.css";
+import "../style/header.css";
 
 function GridLayout() {
   return (
-    <div id="nav-mobile-overlay">
+    <div>
       <div className="gridLayout">
         <Header />
         <Main />
