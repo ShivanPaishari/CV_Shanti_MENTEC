@@ -1,14 +1,15 @@
 import React from "react";
 
 //design
-import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
-import "../style/setColorCard.js";
+import { setColorCard } from "../style/setColorCard.js";
+import "../style/app.css";
+
 
 function ProjectCard(props) {
   const project = props.projects;
   const linkWKA = project.link;
-  console.log("props de project", linkWKA);
+  //console.log("props de project", linkWKA);
 
   function link() {
     if (project.link !== undefined) {

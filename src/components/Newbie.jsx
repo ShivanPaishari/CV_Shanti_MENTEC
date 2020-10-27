@@ -11,6 +11,7 @@ import "../style/card.css";
 import "../style/smallcard.css";
 import "../style/app.css";
 
+
 function Newbie() {
   const [filteredState, setFilteredState] = useState();
 

@@ -10,10 +10,9 @@
   height: fit-content;
   border-radius: 10px;
   padding: 1%;
-  margin: 10px;
   background-color: setColorCard();
   margin: auto;
-  margin-top: 5%;
+  margin-top: 10px;
 }
 
 .card h2 {
@@ -22,9 +21,8 @@
   color: gray;
 }
 
-.intro {
-  color: rgb(122, 122, 122);
-  padding: 5px;
+.pointer {
+  cursor: pointer;
 }
 
 /* __________mise en page des etiquettes _____*/
@@ -45,8 +43,9 @@
     margin: auto;
   }
   .card {
-    width: 300px;
-    margin: auto;
+    width: 480px;
+    position: relative;
+    right: auto;
     margin-top: 2%;
   }
 }

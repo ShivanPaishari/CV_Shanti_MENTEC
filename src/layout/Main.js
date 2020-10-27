@@ -11,7 +11,7 @@ import "../style/app.css";
 
 function Main() {
   return (
-    <div id="main">
+    <div id="fullMain">
       <Switch>
         <Route path="/about">
           <About />

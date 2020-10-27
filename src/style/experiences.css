@@ -12,14 +12,16 @@
 }
 
 .experiences {
-  margin: 50 px;
-  padding: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #selectXp {
-  min-width: 300px;
+  margin-top: 20px;
+  width: 180px;
+}
+#selectXP option {
+  display: flex;
   flex-wrap: wrap;
 }
 
