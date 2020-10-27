@@ -1,9 +1,10 @@
 import React from "react";
 
 //design
-import { setColorCard } from "../style/setColorCard.js";
+import { setColorCard } from "../style/setColorCard";
 import "../style/card.css";
-import "../style/setColorCard.js";
+import "../style/app.css";
+
 
 function ExperienceCard(props) {
   const experiences = props.experiences;

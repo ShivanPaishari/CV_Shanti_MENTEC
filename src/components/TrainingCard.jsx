@@ -5,11 +5,11 @@ import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/setColorCard.js";
 import "../style/smallcard.css";
+import "../style/app.css";
+
 
 function TrainingCard(props) {
   const training = props.training;  
-      
-        
 
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>

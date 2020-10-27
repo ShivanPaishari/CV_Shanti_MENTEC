@@ -4,12 +4,12 @@ import React from "react";
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/smallcard.css";
-
+import "../style/app.css";
 import "../style/setColorCard.js";
+
 
 function RecommendationCard(props) {
   const recommendation = props.recommendation;
-
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{recommendation.name}</h2>

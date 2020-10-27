@@ -1,10 +1,26 @@
 import React from "react";
+import QuotesModal from "./QuotesModal";
+//design
 import "../style/card.css";
-import { setColorCard } from "../style/setColorCard.js";
+import "../style/app.css";
+import "../style/modal.css";
+import { setColorCard } from "../style/setColorCard";
+import { useState } from "react";
 
 function About() {
+  const [modal, setModal]= useState(false);
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
+
+
+
   return (
-    <div className="cards">
+    <div className="cards" handleOnClickHideModal={handleOnClickHideModal}>
       <div
         className="card"
         id="resumecard"
@@ -64,8 +80,10 @@ function About() {
             vies.
           </p>
         </div>
-        <p>+ ajouter une carte</p>
+        <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
       </div>
+
+
       <div
         className="card"
         id="contactcard"
@@ -77,9 +95,18 @@ function About() {
           <p>ashanti.mentec@gmail.com</p>
           <p>25 rue Philippe de Lassalle - 69004 Lyon</p>
         </div>
-        <p>+ ajouter une carte</p>
+        
+        <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} />
+            </div>
+            :""}
+        </div>
       </div>
-    </div>
+
+    </div>  
   );
 }
 

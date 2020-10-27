@@ -1,6 +1,5 @@
 //imports
 import React from "react";
-import { handleOnclick } from "../js/menu.js";
 //import router
 import { Link } from "react-router-dom";
 //import design
@@ -27,7 +26,6 @@ function Header() {
       </div>
       <div>
         <nav id="menu">
-          <h2></h2>
           <ul>
             <li>
               <Link to="/about">Je suis </Link>

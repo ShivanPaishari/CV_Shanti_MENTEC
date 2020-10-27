@@ -4,16 +4,6 @@
   padding-top: 20px;
 }
 
-aside {
-  margin-top: 15px;
-  position: relative;
-  background-color: pink;
-  width: 150px;
-  height: 100vh;
-  color: crimson;
-  padding: 20px;
-}
-
 .internalLabel span {
   display: flex;
   flex-direction: column;
@@ -33,12 +23,6 @@ aside {
   padding: 1%;
   margin: 1%;
   color: gray;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .links {

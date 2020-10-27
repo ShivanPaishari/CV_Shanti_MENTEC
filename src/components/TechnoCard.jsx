@@ -5,10 +5,12 @@ import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
 import "../style/setColorCard.js";
 import "../style/smallcard.css";
+import "../style/app.css";
+
 
 function TechnoCard(props) {
   const technoProps = props.techno;
-  console.log("props de technocard", technoProps);
+  //console.log("props de technocard", technoProps);
 
   const technoList = technoProps.techno;
   const techno = technoList.map((tech) => {

@@ -12,6 +12,7 @@ import "../style/card.css";
 import "../style/smallcard.css";
 import "../style/app.css";
 
+
 function Life() {
   const [filteredState, setFilteredState] = useState();
 
@@ -51,7 +52,7 @@ function Life() {
         <VolunteeringCard volunteering={volunteer} />
       ));
     } else if (filteredState === "more") {
-      return <p> need to be done</p>;
+      return <p>to do</p>;
     }
   }
 
