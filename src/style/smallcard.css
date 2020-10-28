@@ -31,7 +31,7 @@
 
 /* __________responsive _____*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .internalmain {
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
     flex-direction: column;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
   main {
     display: flex;
     flex-direction: column;

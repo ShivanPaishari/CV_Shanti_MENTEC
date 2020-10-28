@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
-//import data
+// data
 import volunteering from "../data/volunteering.json";
 import recommendation from "../data/recommendations.json";
 import training from "../data/training.json";
-//import modules
+// modules
 import TrainingCard from "./TrainingCard";
 import RecommendationCard from "./RecommendationCard";
 import VolunteeringCard from "./VolunteeringCard";
+import MoreAboutMe from "./MoreAboutMe";
 // design
 import "../style/card.css";
 import "../style/smallcard.css";
@@ -54,7 +55,7 @@ function Life() {
         <VolunteeringCard volunteering={volunteer} />
       ));
     } else if (filteredState === "more") {
-      return <p>to do</p>;
+      return <MoreAboutMe/>
     }
   }
 
