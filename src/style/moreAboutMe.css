@@ -1,0 +1,15 @@
+#postit {
+    background-image: url(../images/post-it-note.png);
+    background-size:100%;
+    transform: rotate(-10deg);
+    margin-top: 100px;
+    margin: auto;
+    height: 450px;
+    width: 450px;
+}
+#postitContent{
+    transform: rotate(-8deg);
+    margin: 20px;
+    padding: 80px;
+
+}
