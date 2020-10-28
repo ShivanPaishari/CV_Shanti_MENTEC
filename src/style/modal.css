@@ -5,7 +5,7 @@
     left: 15%;
     z-index: 11;
     align-self: center;
-    background-color: antiquewhite;
+    background-color:pink;
     padding: 16px;
     width: 70%;
     box-sizing: border-box;
@@ -13,14 +13,14 @@
     transition: all 0.3s ease-out;
     margin: auto;
     margin-top: 0px;
-    color: palevioletred;
+    color: crimson;
 }
 
 button {
-    border-color: palevioletred;
+    border-color:crimson;
     background-color : black;
     border-radius: 4px;
-    color: palevioletred;
+    color: crimson;
     border-style: none;
     cursor: pointer;
     padding : 10px;

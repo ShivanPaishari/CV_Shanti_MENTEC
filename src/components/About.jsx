@@ -1,14 +1,16 @@
 import React from "react";
 import QuotesModal from "./QuotesModal";
+import { useState } from "react";
 //design
 import "../style/card.css";
 import "../style/app.css";
 import "../style/modal.css";
 import { setColorCard } from "../style/setColorCard";
-import { useState } from "react";
 
 function About() {
   const [modal, setModal]= useState(false);
+  const subject = "d'informations"
+
 
   function handleOnClickShowModal (){
     setModal(true);
@@ -95,12 +97,11 @@ function About() {
           <p>ashanti.mentec@gmail.com</p>
           <p>25 rue Philippe de Lassalle - 69004 Lyon</p>
         </div>
-        
         <div>
           <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
           {modal === true ? 
             <div>
-              <QuotesModal modal={modal} />
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
             </div>
             :""}
         </div>

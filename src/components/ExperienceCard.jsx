@@ -1,4 +1,6 @@
 import React from "react";
+import QuotesModal from "./QuotesModal";
+import {useState} from "react";
 
 //design
 import { setColorCard } from "../style/setColorCard";
@@ -28,7 +30,16 @@ function ExperienceCard(props) {
     );
   });
 
-  // console.log("test", tool);
+  const [modal, setModal]= useState(false);
+  const subject = "d'expériences"
+
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
 
   return (
     <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
@@ -48,7 +59,14 @@ function ExperienceCard(props) {
         <span>Tâches : {task}</span>
       </p>
       <p className="internalLabel">Outils :{tool}</p>
-      <p> +Ajouter une carte</p>
+      <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
     </div>
   );
 }

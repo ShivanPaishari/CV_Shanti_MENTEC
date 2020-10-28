@@ -1,4 +1,6 @@
 import React from "react";
+import QuotesModal from "./QuotesModal";
+import { useState } from "react";
 
 //design
 import { setColorCard } from "../style/setColorCard.js";
@@ -10,9 +12,9 @@ import "../style/app.css";
 
 function TechnoCard(props) {
   const technoProps = props.techno;
-  //console.log("props de technocard", technoProps);
-
   const technoList = technoProps.techno;
+  const [modal, setModal]= useState(false);
+  const subject = "de nouvelles connaissances techniques";
   const techno = technoList.map((tech) => {
     if (technoList !== []) {
       return (
@@ -23,6 +25,15 @@ function TechnoCard(props) {
     }
   });
 
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
+
+  
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{technoProps.technotype}</h2>
@@ -31,7 +42,14 @@ function TechnoCard(props) {
           <span>{techno}</span>
         </p>
       </div>
-      <p> +Ajouter une carte</p>
+      <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
     </div>
   );
 }

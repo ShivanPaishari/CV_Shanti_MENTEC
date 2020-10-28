@@ -63,22 +63,9 @@ main {
   padding: 5px;
 }
 
-button {
-  border-color: palevioletred;
-  background-color : black;
-  border-radius: 4px;
-  color: palevioletred;
-  border-style: none;
-  cursor: pointer;
-  padding : 10px;
-  margin : 10px;
-}
 
-.backLayout{
-  background-color: black;
-  z-index: 10;
-  opacity: 0.4;
-}
+
+
 
 /* __________responsive _____*/
 
