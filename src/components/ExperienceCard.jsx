@@ -1,7 +1,7 @@
 import React from "react";
-import QuotesModal from "./QuotesModal";
 import {useState} from "react";
-
+// import modules
+import QuotesModal from "./QuotesModal";
 //design
 import { setColorCard } from "../style/setColorCard";
 import "../style/card.css";
@@ -9,8 +9,12 @@ import "../style/app.css";
 
 
 function ExperienceCard(props) {
+
   const experiences = props.experiences;
   const tasksList = experiences.tasks;
+  const toolsList = experiences.tools;
+  const [modal, setModal]= useState(false);
+  const subject = "d'expériences"
   const task = tasksList.map((task) => {
     if (tasksList !== []) {
       return (
@@ -20,8 +24,6 @@ function ExperienceCard(props) {
       );
     }
   });
-
-  const toolsList = experiences.tools;
   const tool = toolsList.map((tool) => {
     return (
       <div>
@@ -29,10 +31,7 @@ function ExperienceCard(props) {
       </div>
     );
   });
-
-  const [modal, setModal]= useState(false);
-  const subject = "d'expériences"
-
+  
 
   function handleOnClickShowModal (){
     setModal(true);
@@ -41,7 +40,9 @@ function ExperienceCard(props) {
     setModal(false);
   }
 
+
   return (
+
     <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{experiences.job}</h2>
       <div className="internalLabel">
@@ -70,4 +71,6 @@ function ExperienceCard(props) {
     </div>
   );
 }
+
+
 export default ExperienceCard;

@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
-// modules
+//import data
 import volunteering from "../data/volunteering.json";
 import recommendation from "../data/recommendations.json";
 import training from "../data/training.json";
+//import modules
 import TrainingCard from "./TrainingCard";
 import RecommendationCard from "./RecommendationCard";
 import VolunteeringCard from "./VolunteeringCard";
@@ -14,7 +15,9 @@ import "../style/app.css";
 
 
 function Life() {
+
   const [filteredState, setFilteredState] = useState();
+
 
   function handleChangeInitialTraining(event) {
     setFilteredState("initial");
@@ -31,7 +34,6 @@ function Life() {
   function handleChangeMore(event) {
     setFilteredState("more");
   }
-
   function selectedState() {
     if (filteredState === undefined) {
       return <p className="intro">Selectionnez une thématique</p>;
@@ -56,7 +58,9 @@ function Life() {
     }
   }
 
+
   return (
+
     <div className="internalmain">
       <aside>
         <div>
@@ -84,5 +88,6 @@ function Life() {
     </div>
   );
 }
+
 
 export default Life;

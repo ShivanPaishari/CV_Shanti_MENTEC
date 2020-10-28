@@ -1,6 +1,7 @@
 import React from "react";
-import QuotesModal from "./QuotesModal";
 import { useState } from "react";
+//modules
+import QuotesModal from "./QuotesModal";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -10,6 +11,7 @@ import "../style/app.css";
 
 
 function VolunteeringCard(props) {
+
   const [modal, setModal]= useState(false);
   const subject = "de bénévolats";
 
@@ -23,6 +25,7 @@ function VolunteeringCard(props) {
 
 
   return (
+
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{props.volunteering.organization}</h2>
       <div className="internalLabel">
@@ -44,4 +47,6 @@ function VolunteeringCard(props) {
     </div>
   );
 }
+
+
 export default VolunteeringCard;

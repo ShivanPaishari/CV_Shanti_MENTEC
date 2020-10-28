@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
-
-//modules
+// data
 import techno from "../data/techno.json";
 import projets from "../data/projets.json";
+//i modules
 import TechnoCard from "./TechnoCard";
 import ProjectCard from "./ProjectCard";
 //design
@@ -13,16 +13,16 @@ import "../style/app.css";
 
 
 function Newbie() {
+
   const [filteredState, setFilteredState] = useState();
 
+  
   function handleChangeTools(event) {
     setFilteredState("tools");
   }
-
   function handleChangeProjects(event) {
     setFilteredState("projects");
   }
-
   function selectedState() {
     if (filteredState === undefined) {
       return <p className="intro">Selectionnez une thématique</p>;
@@ -33,7 +33,9 @@ function Newbie() {
     }
   }
 
+
   return (
+
     <div className="internalmain">
       <aside>
         <div>
@@ -45,5 +47,6 @@ function Newbie() {
     </div>
   );
 }
+
 
 export default Newbie;

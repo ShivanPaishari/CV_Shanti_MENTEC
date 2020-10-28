@@ -1,13 +1,16 @@
 import React from "react";
-import QuotesModal from "./QuotesModal";
 import { useState } from "react";
-//design
+// modules
+import QuotesModal from "./QuotesModal";
+// design
 import "../style/card.css";
 import "../style/app.css";
 import "../style/modal.css";
 import { setColorCard } from "../style/setColorCard";
 
+
 function About() {
+
   const [modal, setModal]= useState(false);
   const subject = "d'informations"
 
@@ -20,8 +23,8 @@ function About() {
   }
 
 
-
   return (
+
     <div className="cards" handleOnClickHideModal={handleOnClickHideModal}>
       <div
         className="card"
@@ -82,9 +85,15 @@ function About() {
             vies.
           </p>
         </div>
-        <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+        <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
       </div>
-
 
       <div
         className="card"
@@ -110,5 +119,6 @@ function About() {
     </div>  
   );
 }
+
 
 export default About;

@@ -1,6 +1,7 @@
 import React from "react";
-import QuotesModal from "./QuotesModal";
 import { useState } from "react";
+//modules
+import QuotesModal from "./QuotesModal";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -10,6 +11,7 @@ import "../style/setColorCard.js";
 
 
 function RecommendationCard(props) {
+
   const recommendation = props.recommendation;
   const [modal, setModal]= useState(false);
   const subject = "de recommandations";
@@ -41,4 +43,6 @@ function RecommendationCard(props) {
     </div>
   );
 }
+
+
 export default RecommendationCard;

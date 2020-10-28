@@ -1,22 +1,22 @@
 import React from "react";
-//data
-import experiences from "../data/experiences.json";
-//modules
-import ExperienceCard from "./ExperienceCard";
 import { useState } from "react";
+// data
+import experiences from "../data/experiences.json";
+// modules
+import ExperienceCard from "./ExperienceCard";
 //design
 import "../style/experiences.css";
 import "../style/app.css";
 
+
 function Experience() {
+
   const [choosenXpState, setChoosenXpState] = useState();
   
 
   function handleChangeTitle(event) {
     setChoosenXpState(event.target.value);
   }
-  //console.log("choosen experience state", choosenXpState);
-
   function developContent() {
     if (choosenXpState === undefined) {
       function animationframe() {
@@ -53,7 +53,9 @@ function Experience() {
     }
   }
 
+
   return (
+
     <div className="internalmain">
       <aside>
         <select id="selectXp" onChange={(event) => handleChangeTitle(event)}>
@@ -66,11 +68,11 @@ function Experience() {
             );
           })}
         </select>
-      
       </aside>
       <main>{developContent()}</main>  
     </div>
   );
 }
+
 
 export default Experience;

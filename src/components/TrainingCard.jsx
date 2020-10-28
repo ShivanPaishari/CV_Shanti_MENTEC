@@ -1,6 +1,7 @@
 import React from "react";
-import QuotesModal from "./QuotesModal";
 import { useState } from "react";
+//modules
+import QuotesModal from "./QuotesModal";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -10,6 +11,7 @@ import "../style/app.css";
 
 
 function TrainingCard(props) {
+
   const training = props.training;  
   const [modal, setModal]= useState(false);
   const subject = "de formations";
@@ -24,6 +26,7 @@ function TrainingCard(props) {
 
   
   return (
+
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{training.title}</h2>
       <div className="internalLabel">
@@ -47,4 +50,6 @@ function TrainingCard(props) {
     </div>
   );
 }
+
+
 export default TrainingCard;

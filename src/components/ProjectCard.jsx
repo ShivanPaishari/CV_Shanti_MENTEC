@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+//modules
 import QuotesModal from "./QuotesModal";
 //design
 import "../style/card.css";
@@ -8,10 +9,12 @@ import "../style/app.css";
 
 
 function ProjectCard(props) {
+
   const project = props.projects;
   const linkWKA = project.link;
   const [modal, setModal]= useState(false);
   const subject = "de projets"
+
 
   function link() {
     if (project.link !== undefined) {
@@ -22,7 +25,6 @@ function ProjectCard(props) {
       );
     }
   }
-
   function handleOnClickShowModal (){
     setModal(true);
   }
@@ -32,6 +34,7 @@ function ProjectCard(props) {
 
 
   return (
+
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{project.title}</h2>
       <p className="links">{link()}</p>
@@ -50,4 +53,6 @@ function ProjectCard(props) {
     </div>
   );
 }
+
+
 export default ProjectCard;

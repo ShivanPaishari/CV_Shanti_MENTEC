@@ -5,13 +5,14 @@ import {useEffect,useState} from "react";
 import "../style/modal.css";
 
 
-
 function QuotesModal(props){
+
     const modal = props.modal;
     const [quote, setQuote] = useState([]);
     const [quoteAuthor, setQuoteAuthor] = useState([]);
     const [authorNameResult, setAuthorNameResult] = useState();
 
+    
     //recupération de l'API
     useEffect(() => {
       let configAPI = {
@@ -35,25 +36,26 @@ function QuotesModal(props){
       }, []);
 
 
-      function handleOnClickAuthor () {
-        console.log ("nom de l'auteur",quoteAuthor.name)
-        setAuthorNameResult (true)
-      }
-
+    function handleOnClickAuthor () {
+      console.log ("nom de l'auteur",quoteAuthor.name)
+      setAuthorNameResult (true)
+    }
 
 
     return(
+
       <div className="modal" >
         <button onClick={props.handleOnClickHideModal}>x</button>
         <h3>Il n'y a pas {props.subject} à ajouter à cet instant.</h3>
         <p> Mais puisque vous êtes passé par là, je vous invite à prendre un instant pour deviner qui a dit :</p>
         <h4>{quote}</h4>
         <div>
-        <button onClick={handleOnClickAuthor}>L'auteur est :</button>
-        {authorNameResult === true ? quoteAuthor.name: ""}
+          <button onClick={handleOnClickAuthor}>L'auteur est :</button>
+          {authorNameResult === true ? quoteAuthor.name: ""}
         </div>
-
       </div>
     )
 }
+
+
 export default QuotesModal;
