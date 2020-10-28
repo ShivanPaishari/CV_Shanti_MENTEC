@@ -1,5 +1,6 @@
 import React from "react";
-
+import QuotesModal from "./QuotesModal";
+import { useState } from "react";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -10,6 +11,18 @@ import "../style/setColorCard.js";
 
 function RecommendationCard(props) {
   const recommendation = props.recommendation;
+  const [modal, setModal]= useState(false);
+  const subject = "de recommandations";
+
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
+
+  
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{recommendation.name}</h2>
@@ -17,7 +30,14 @@ function RecommendationCard(props) {
         <h4>{recommendation.job} </h4>
         <p>{recommendation.container} </p>
       </div>
-      <p> +Ajouter une carte</p>
+      <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
     </div>
   );
 }

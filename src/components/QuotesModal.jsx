@@ -10,8 +10,7 @@ function QuotesModal(props){
     const modal = props.modal;
     const [quote, setQuote] = useState([]);
     const [quoteAuthor, setQuoteAuthor] = useState([]);
-    const [authorNameResult,setAuthorNameResult] = useState(false)
-console.log (modal)
+    const [authorNameResult, setAuthorNameResult] = useState();
 
     //recupération de l'API
     useEffect(() => {
@@ -35,22 +34,18 @@ console.log (modal)
         });
       }, []);
 
+
       function handleOnClickAuthor () {
         console.log ("nom de l'auteur",quoteAuthor.name)
         setAuthorNameResult (true)
       }
-        
-      // function displayModal (props){
-      //   console.log ("props",props)
-      //     modal === true ? 1 :0;
-      //   }
 
 
 
     return(
       <div className="modal" >
-        <button>x</button>
-        <h3>Il n'y a pas de carte à ajouter à cet instant.</h3>
+        <button onClick={props.handleOnClickHideModal}>x</button>
+        <h3>Il n'y a pas {props.subject} à ajouter à cet instant.</h3>
         <p> Mais puisque vous êtes passé par là, je vous invite à prendre un instant pour deviner qui a dit :</p>
         <h4>{quote}</h4>
         <div>

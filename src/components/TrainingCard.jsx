@@ -1,5 +1,6 @@
 import React from "react";
-
+import QuotesModal from "./QuotesModal";
+import { useState } from "react";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -10,7 +11,18 @@ import "../style/app.css";
 
 function TrainingCard(props) {
   const training = props.training;  
+  const [modal, setModal]= useState(false);
+  const subject = "de formations";
 
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
+
+  
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{training.title}</h2>
@@ -24,8 +36,14 @@ function TrainingCard(props) {
         <div className="internalLabel">
           {training.container.map (item=>(<p>{item.key}</p>))}
         </div>
-
-      <p> +Ajouter une carte</p>
+        <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
     </div>
   );
 }

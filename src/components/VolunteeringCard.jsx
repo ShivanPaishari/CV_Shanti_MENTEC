@@ -1,5 +1,6 @@
 import React from "react";
-
+import QuotesModal from "./QuotesModal";
+import { useState } from "react";
 //design
 import { setColorCard } from "../style/setColorCard.js";
 import "../style/card.css";
@@ -9,6 +10,17 @@ import "../style/app.css";
 
 
 function VolunteeringCard(props) {
+  const [modal, setModal]= useState(false);
+  const subject = "de bénévolats";
+
+
+  function handleOnClickShowModal (){
+    setModal(true);
+  }
+  function handleOnClickHideModal(){
+    setModal(false);
+  }
+
 
   return (
     <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
@@ -21,7 +33,14 @@ function VolunteeringCard(props) {
       <div className="internalLabel">
         <p>{props.volunteering.title} </p>
       </div>
-      <p> +Ajouter une carte</p>
+      <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
     </div>
   );
 }
