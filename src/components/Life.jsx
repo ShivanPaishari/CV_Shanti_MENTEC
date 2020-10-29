@@ -5,13 +5,14 @@ import volunteering from "../data/volunteering.json";
 import recommendation from "../data/recommendations.json";
 import training from "../data/training.json";
 //import modules
-import TrainingCard from "./TrainingCard";
-import RecommendationCard from "./RecommendationCard";
-import VolunteeringCard from "./VolunteeringCard";
+import TrainingCard from "./cards/TrainingCard";
+import RecommendationCard from "./cards/RecommendationCard";
+import VolunteeringCard from "./cards/VolunteeringCard";
 // design
-import "../style/card.css";
-import "../style/smallcard.css";
 import "../style/app.css";
+import "../style/aside.css";
+import "../style/reset.css";
+import "../style/mainSetting.css";
 
 
 function Life() {
@@ -61,7 +62,7 @@ function Life() {
 
   return (
 
-    <div className="internalmain">
+    <div className="mainSetting">
       <aside>
         <div>
           <div id="training">
@@ -84,7 +85,9 @@ function Life() {
           <h4 onClick={(event) => handleChangeMore(event)}>Mais encore...</h4>
         </div>
       </aside>
-      <main>{selectedState()}</main>
+      <div className="cards">
+        <div>{selectedState()}</div>
+      </div>
     </div>
   );
 }

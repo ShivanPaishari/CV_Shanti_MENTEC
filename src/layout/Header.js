@@ -4,16 +4,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import design
 import "../style/app.css";
-import "../style/header.css";
+import "../style/headerMenu.css";
+
 
 function Header() {
+
   function handleOnclick(event) {
     event.preventDefault();
     document.getElementById("menu").className += "open";
   }
 
+
   return (
+
     <div id="header">
+
       <div id="titles">
         <p>Shanti Mentec</p>
         <h2>Developpeuse Web</h2>
@@ -24,6 +29,7 @@ function Header() {
           <span></span>
         </div>
       </div>
+
       <div>
         <nav id="menu">
           <ul>
@@ -42,8 +48,10 @@ function Header() {
           </ul>
         </nav>
       </div>
-      <script src="src/js/menu.js"></script>
+      
     </div>
   );
 }
+
+
 export default Header;

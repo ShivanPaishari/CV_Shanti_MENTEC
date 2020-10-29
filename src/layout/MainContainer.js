@@ -8,10 +8,14 @@ import Experience from "../components/Experience";
 import Life from "../components/Life";
 //import css
 import "../style/app.css";
+import "../style/mainSetting.css";
 
-function Main() {
+
+function MainContainer() {
+
+
   return (
-    <div id="fullMain">
+    <div id="mainContainer">
       <Switch>
         <Route path="/about">
           <About />
@@ -30,4 +34,5 @@ function Main() {
   );
 }
 
-export default Main;
+
+export default MainContainer;

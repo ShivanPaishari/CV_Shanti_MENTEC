@@ -3,10 +3,13 @@ import { useState } from "react";
 // data
 import experiences from "../data/experiences.json";
 // modules
-import ExperienceCard from "./ExperienceCard";
+import ExperienceCard from "./cards/ExperienceCard";
 //design
 import "../style/experiences.css";
 import "../style/app.css";
+import "../style/aside.css";
+import "../style/reset.css";
+import "../style/mainSetting.css";
 
 
 function Experience() {
@@ -56,7 +59,7 @@ function Experience() {
 
   return (
 
-    <div className="internalmain">
+    <div className="mainSetting">
       <aside>
         <select id="selectXp" onChange={(event) => handleChangeTitle(event)}>
           <option value="">Tous les postes</option>
@@ -69,7 +72,9 @@ function Experience() {
           })}
         </select>
       </aside>
-      <main>{developContent()}</main>  
+      <div className="cards">
+        <div>{developContent()}</div>  
+      </div>
     </div>
   );
 }

@@ -4,12 +4,13 @@ import { useState } from "react";
 import techno from "../data/techno.json";
 import projets from "../data/projets.json";
 //i modules
-import TechnoCard from "./TechnoCard";
-import ProjectCard from "./ProjectCard";
+import TechnoCard from "./cards/TechnoCard";
+import ProjectCard from "./cards/ProjectCard";
 //design
-import "../style/card.css";
-import "../style/smallcard.css";
 import "../style/app.css";
+import "../style/aside.css";
+import "../style/reset.css";
+import "../style/mainSetting.css";
 
 
 function Newbie() {
@@ -36,14 +37,16 @@ function Newbie() {
 
   return (
 
-    <div className="internalmain">
+    <div className="mainSetting">
       <aside>
         <div>
-          <ul onClick={(event) => handleChangeTools(event)}>Outils</ul>
-          <ul onClick={(event) => handleChangeProjects(event)}>Projets</ul>
+          <h4 onClick={(event) => handleChangeTools(event)}>Outils</h4>
+          <h4 onClick={(event) => handleChangeProjects(event)}>Projets</h4>
         </div>
       </aside>
-      <main>{selectedState()}</main>
+      <div className="cards">
+        <div>{selectedState()}</div>
+      </div>
     </div>
   );
 }

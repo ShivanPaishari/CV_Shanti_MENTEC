@@ -1,0 +1,27 @@
+
+.mainSetting{
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.intro {
+    color: rgb(122, 122, 122);
+    padding: 5px;
+    margin: auto;
+  }
+
+  .componentContainer {
+    width: max-content;
+  }
+  
+  /* __________responsive _____*/
+  @media screen and (max-width: 1024px) {
+    .mainSetting {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+

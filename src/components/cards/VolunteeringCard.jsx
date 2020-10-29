@@ -1,21 +1,30 @@
 import React from "react";
 import { useState } from "react";
 //modules
-import QuotesModal from "./QuotesModal";
+import QuotesModal from "../QuotesModal";
 //design
-import { setColorCard } from "../style/setColorCard.js";
-import "../style/card.css";
-import "../style/setColorCard.js";
-import "../style/smallcard.css";
-import "../style/app.css";
+import { setColorCard } from "../../style/setColorCard.js";
+import "../../style/card.css";
+import "../../style/app.css";
+import "../../style/reset.css";
 
 
 function VolunteeringCard(props) {
 
   const [modal, setModal]= useState(false);
+  const linkWKA = props.volunteering.link;
   const subject = "de bénévolats";
 
 
+  function link() {
+    if (props.volunteering.link !== undefined) {
+      return (
+        <a href={linkWKA} target="_blank" rel="noopener noreferrer">
+          Voir le site
+        </a>
+      );
+    }
+  }
   function handleOnClickShowModal (){
     setModal(true);
   }
@@ -26,8 +35,9 @@ function VolunteeringCard(props) {
 
   return (
 
-    <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
+    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{props.volunteering.organization}</h2>
+      <p className="links">{link()}</p>
       <div className="internalLabel">
         <h3>{props.volunteering.theme} </h3>
         <p>{props.volunteering.date} </p>

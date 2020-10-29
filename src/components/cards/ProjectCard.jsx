@@ -1,11 +1,12 @@
 import React from "react";
 import { useState } from "react";
 //modules
-import QuotesModal from "./QuotesModal";
+import QuotesModal from "../QuotesModal";
 //design
-import "../style/card.css";
-import { setColorCard } from "../style/setColorCard.js";
-import "../style/app.css";
+import "../../style/card.css";
+import { setColorCard } from "../../style/setColorCard.js";
+import "../../style/app.css";
+import "../../style/reset.css";
 
 
 function ProjectCard(props) {
@@ -35,7 +36,7 @@ function ProjectCard(props) {
 
   return (
 
-    <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
+    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{project.title}</h2>
       <p className="links">{link()}</p>
       <div>
@@ -43,14 +44,15 @@ function ProjectCard(props) {
         <p className="internalLabel">{project.details} </p>
       </div>
       <div>
-          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
-          {modal === true ? 
+        <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+        {modal === true ? 
             <div>
               <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
             </div>
             :""}
-        </div>
+      </div>
     </div>
+ 
   );
 }
 
