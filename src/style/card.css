@@ -59,9 +59,6 @@
 /* __________responsive _____*/
 @media screen and (max-width: 1024px) {
 
-<<<<<<< HEAD
-@media screen and (max-width: 1024px) {
-=======
   #training {
     display: flex;
     flex-direction: column;
@@ -71,7 +68,6 @@
     padding-left: 10px;
     padding-bottom: 0px;
   }
->>>>>>> css
   .cards {
     margin: auto;
     display: flex;

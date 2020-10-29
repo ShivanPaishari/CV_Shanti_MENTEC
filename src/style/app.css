@@ -33,44 +33,9 @@ footer {
 
   /* __________responsive _____*/
 
-<<<<<<< HEAD
-
-
-/* __________responsive _____*/
-
-@media screen and (max-width: 1024px) {
-  aside div h4 {
-    margin-left: 0px;
-    flex-wrap: wrap;
-  }
-  aside div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  aside {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  aside div h4 {
-    margin-left: 0px;
-    flex-wrap: wrap;
-  }
-  aside div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  aside {
-    height: 200px;
-  }
-}
-=======
   @media screen and (max-width: 470px) {
     main {
       display: inline;
       justify-content: center;
     }
   }
->>>>>>> css

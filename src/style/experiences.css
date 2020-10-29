@@ -28,15 +28,10 @@
 
 /* __________responsive _____*/
 
-<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .cards {
     margin: auto;
   }
-=======
-@media screen and (max-width: 470px) {
-
->>>>>>> css
   #selectXp {
     width: 80%;
   }

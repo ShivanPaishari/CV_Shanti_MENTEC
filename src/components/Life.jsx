@@ -4,18 +4,11 @@ import { useState } from "react";
 import volunteering from "../data/volunteering.json";
 import recommendation from "../data/recommendations.json";
 import training from "../data/training.json";
-<<<<<<< HEAD
-// modules
-import TrainingCard from "./TrainingCard";
-import RecommendationCard from "./RecommendationCard";
-import VolunteeringCard from "./VolunteeringCard";
-import MoreAboutMe from "./MoreAboutMe";
-=======
 //import modules
 import TrainingCard from "./cards/TrainingCard";
 import RecommendationCard from "./cards/RecommendationCard";
 import VolunteeringCard from "./cards/VolunteeringCard";
->>>>>>> css
+import MoreAboutMe from "./MoreAboutMe";
 // design
 import "../style/app.css";
 import "../style/aside.css";

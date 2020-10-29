@@ -8,8 +8,8 @@
     width: 450px;
 }
 #postitContent{
-    transform: rotate(-8deg);
+    transform: rotate(-7deg);
     margin: 20px;
     padding: 80px;
-
+    line-height: 3em;
 }
