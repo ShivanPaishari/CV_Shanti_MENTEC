@@ -1,11 +1,12 @@
 import React from "react";
 import {useState} from "react";
-// import modules
-import QuotesModal from "./QuotesModal";
-//design
-import { setColorCard } from "../style/setColorCard";
-import "../style/card.css";
-import "../style/app.css";
+// modules
+import QuotesModal from "../QuotesModal";
+// design
+import { setColorCard } from "../../style/setColorCard";
+import "../../style/card.css";
+import "../../style/app.css";
+import "../../style/reset.css";
 
 
 function ExperienceCard(props) {

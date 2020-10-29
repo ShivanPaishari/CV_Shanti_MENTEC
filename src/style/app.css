@@ -7,64 +7,33 @@ body {
 
 .gridLayout {
   width: 100%;
-  height: 100%;
+  height: fit-content;
   display: grid;
   grid-template-areas:
     "head head"
     "main main"
     "foot foot";
-  grid-template-rows: 200px 900px 30px;
-  grid-template-columns: 350px 1fr;
+  grid-template-columns: repeat (2, 2fr);
 }
 
 #header {
   grid-area: head;
-  background-color: black;
+  height: fit-content;
 }
 
-#fullMain {
-  background-color: black;
+#mainContainer {
   grid-area: main;
-  height: fit-content;
 }
 
 footer {
   grid-area: foot;
-  flex-direction: column;
-  width: 100%;
-  height: 30px;
-  position: fixed;
-  bottom: 0;
-  padding-top: 10px;
-  background-color: black;
-  text-align: center;
-}
-aside {
-  margin-top: 10px;
-  background-color: pink;
-  width: 180px;
-  height: 100vh;
-  padding: 10px;
-  color: crimson;
-}
-
-aside ul {
-  padding: 5px;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.intro {
-  color: rgb(122, 122, 122);
-  padding: 5px;
 }
 
 
 
+  /* __________responsive _____*/
+
+<<<<<<< HEAD
 
 
 /* __________responsive _____*/
@@ -97,3 +66,11 @@ main {
     height: 200px;
   }
 }
+=======
+  @media screen and (max-width: 470px) {
+    main {
+      display: inline;
+      justify-content: center;
+    }
+  }
+>>>>>>> css

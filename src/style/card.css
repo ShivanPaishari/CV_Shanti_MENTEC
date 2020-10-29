@@ -1,29 +1,34 @@
 .cards {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
-  margin: auto;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 /* _______mise en page des cartes _________*/
 .card {
-  width: 500px;
+  width: 550px;
   height: fit-content;
   border-radius: 10px;
   padding: 1%;
+  margin: 10px;
   background-color: setColorCard();
-  margin: auto;
-  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card h2 {
   padding: 1%;
   margin: 1%;
-  color: gray;
+  color:gray;
 }
 
-.pointer {
-  cursor: pointer;
+.card p {
+  line-height: 2em;
 }
+
 
 /* __________mise en page des etiquettes _____*/
 .internalLabel {
@@ -35,12 +40,42 @@
   font-size: 0.85em;
   text-align: justify;
 }
-/* __________responsive _____*/
 
+.internalLabel span {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.links {
+  margin: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/* __________responsive _____*/
 @media screen and (max-width: 1024px) {
+
+<<<<<<< HEAD
+@media screen and (max-width: 1024px) {
+=======
+  #training {
+    display: flex;
+    flex-direction: column;
+  }
+  #training ul {
+    margin: 0px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+  }
+>>>>>>> css
   .cards {
-    display: inline;
     margin: auto;
+    display: flex;
+    flex-direction: column;
   }
   .card {
     width: 480px;

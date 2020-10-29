@@ -1,7 +1,6 @@
 .logoXp {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-top: 10%;
   position: relative;
 }
@@ -17,8 +16,10 @@
 }
 
 #selectXp {
+  border-color: crimson;
+  color : crimson;
   margin-top: 20px;
-  width: 180px;
+  width: 100%;
 }
 #selectXP option {
   display: flex;
@@ -27,16 +28,21 @@
 
 /* __________responsive _____*/
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   .cards {
     margin: auto;
   }
+=======
+@media screen and (max-width: 470px) {
+
+>>>>>>> css
   #selectXp {
-    width: 300px;
+    width: 80%;
   }
   .logoXp {
     flex-direction: column;
-    margin: auto;
+
   }
   .logoXp img {
     margin-top: 8%;

@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
 //modules
-import QuotesModal from "./QuotesModal";
+import QuotesModal from "../QuotesModal";
 //design
-import { setColorCard } from "../style/setColorCard.js";
-import "../style/card.css";
-import "../style/smallcard.css";
-import "../style/app.css";
-import "../style/setColorCard.js";
+import { setColorCard } from "../../style/setColorCard.js";
+import "../../style/card.css";
+import "../../style/app.css";
+import "../../style/reset.css";
 
 
 function RecommendationCard(props) {
@@ -26,7 +25,8 @@ function RecommendationCard(props) {
 
   
   return (
-    <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
+
+    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{recommendation.name}</h2>
       <div className="internalLabel">
         <h4>{recommendation.job} </h4>

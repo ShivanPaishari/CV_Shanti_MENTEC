@@ -1,6 +1,19 @@
 #titles {
   padding-left: 50px;
+  padding-top: 50px;
 }
+#titles p {
+  margin-top:10px;
+  margin-bottom: 20px;;
+}
+#titles h2 {
+  margin-top: 30px;
+}
+
+
+
+/* __________burger _____*/
+
 
 #menu a {
   text-decoration: none;
@@ -25,8 +38,10 @@
   padding: 2px;
 }
 
+
+/* __________responsive _____*/
 @media screen and (max-width: 470px) {
-  /*zne de clic*/
+  /*zone de clic*/
   #burger {
     display: block;
     width: 50px;
@@ -58,7 +73,7 @@
     right: -100%;
     top: 0px;
     width: 130px;
-    height: 100vh;
+    height: 100%;
     bottom: 0;
     background-color: #f7c3d4;
     padding: 5px;
@@ -82,7 +97,6 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 2;
   }
-
   .overlaymenu.show {
     display: block;
   }

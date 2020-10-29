@@ -1,13 +1,12 @@
 import React from "react";
 import { useState } from "react";
 //modules
-import QuotesModal from "./QuotesModal";
+import QuotesModal from "../QuotesModal";
 //design
-import { setColorCard } from "../style/setColorCard.js";
-import "../style/card.css";
-import "../style/setColorCard.js";
-import "../style/smallcard.css";
-import "../style/app.css";
+import { setColorCard } from "../../style/setColorCard.js";
+import "../../style/card.css";
+import "../../style/app.css";
+import "../../style/reset.css";
 
 
 function TechnoCard(props) {
@@ -37,7 +36,7 @@ function TechnoCard(props) {
   
   return (
 
-    <div className="cardS" style={{ backgroundColor: `${setColorCard()} ` }}>
+    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{technoProps.technotype}</h2>
       <div>
         <p className="internalLabel">
@@ -51,7 +50,7 @@ function TechnoCard(props) {
               <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
             </div>
             :""}
-        </div>
+      </div>
     </div>
   );
 }

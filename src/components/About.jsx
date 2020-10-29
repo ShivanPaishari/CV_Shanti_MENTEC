@@ -6,6 +6,8 @@ import QuotesModal from "./QuotesModal";
 import "../style/card.css";
 import "../style/app.css";
 import "../style/modal.css";
+import "../style/reset.css";
+import "../style/mainSetting.css";
 import { setColorCard } from "../style/setColorCard";
 
 
@@ -25,7 +27,7 @@ function About() {
 
   return (
 
-    <div className="cards" handleOnClickHideModal={handleOnClickHideModal}>
+    <div className="mainSetting">
       <div
         className="card"
         id="resumecard"
