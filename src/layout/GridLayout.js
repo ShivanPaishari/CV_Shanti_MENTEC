@@ -7,7 +7,7 @@ import Footer from "./Footer";
 //import css
 import "../style/app.css";
 import "../style/toggle.css";
-import {GlobalStyles} from "../components/GlobalStyles";
+
 
 
 function GridLayout(props) {
@@ -15,14 +15,11 @@ function GridLayout(props) {
 
   return (
     <div>
-              <GlobalStyles/>
-
       <div id="gridLayout">
-        <Header handleOnClickToogle ={props.handleOnClickToogle}/>
+        <Header handleOnClickToogle ={props.handleOnClickToogle} handleOnClickTBurger={props.handleOnClickTBurger}/>
         <MainContainer />
         <Footer />
       </div>
-      <script src="src/js/menu.js"></script>
     </div>
   );
 }

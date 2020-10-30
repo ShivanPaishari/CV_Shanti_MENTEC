@@ -1,6 +1,6 @@
 
 import basic from "./basic";
 
-export default{
+export default {
  ...basic
 }

@@ -74,10 +74,10 @@
     flex-direction: column;
   }
   .card {
-    width: 480px;
+    width: 280px;
     position: relative;
-    right: auto;
+    margin-right: auto;
     margin-top: 2%;
-    margin: auto;
+    margin-left: auto;
   }
 }

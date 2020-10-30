@@ -11,25 +11,33 @@ import "../style/toggle.css";
 function Header(props) {
 
 
-  function handleOnclick(event) {
+  function handleOnclickBurger(event) {
     event.preventDefault();
-    document.getElementById("menu").className += "open";
+    document.getElementById("menu").className = "open";
   }
 
 
   return (
 
     <div id="header">
+    <div id='transparency'></div>
+
 
       <div id="titles">
-        <p>Shanti Mentec</p>
-        <h2>Developpeuse Web</h2>
-        <p>React, Node.js</p>
-        <div id="burger" onClick={(event) => handleOnclick(event)}>
+        <div>
+          <p>Shanti Mentec</p>
+          <h2>Developpeuse Web</h2>
+          <p>React, Node.js</p>
+        </div>
+        <div id="burger" onClick={(event) => handleOnclickBurger(event)}>
           <span></span>
           <span></span>
           <span></span>
         </div>
+        <label className="switchdkm">
+          <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
+          <span className="slider round"></span>
+        </label>
       </div>
 
       <div>
@@ -51,10 +59,7 @@ function Header(props) {
         </nav>
       </div>
 
-      <label className="switchdkm">
-        <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
-        <span className="slider round"></span>
-      </label>
+
 
     </div>
   );
