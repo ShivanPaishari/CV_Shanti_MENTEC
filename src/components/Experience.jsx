@@ -29,7 +29,7 @@ function Experience() {
       return (
         <div>
           <p className="intro">Choisissez une expérience pour en connaitre les détails</p>
-          <div class="logoXp">
+          <div className="logoXp">
             <img
               src="https://ph-files.imgix.net/e9a58eea-1bb0-44ed-9a40-ff9934d6dfab?auto=format&auto=compress&codec=mozjpeg&cs=strip"
               alt="logo Gitbook"

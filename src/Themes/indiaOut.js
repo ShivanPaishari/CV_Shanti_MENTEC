@@ -2,6 +2,6 @@ import indiaIn from "./indiaIn";
 
 export default {
     ...indiaIn,
-    background: '#FFF',
+    background: '#FFFF00',
     text: '#363537',
 }

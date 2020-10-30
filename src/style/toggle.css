@@ -1,20 +1,11 @@
 
-.dark {
-    background-color:black;
-    color:white;
-}
-
-
-
-
-
 /*toogle */ 
 
 /* The switch - the box around the slider */
 .switchdkm {
     position: relative;
     margin : 4px;
-    margin-left: 50px;
+    margin-left: 0px;
     display: inline-block;
     width: 52px;
     height: 24px;
