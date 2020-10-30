@@ -7,7 +7,6 @@ import "../style/modal.css";
 
 function QuotesModal(props){
 
-    const modal = props.modal;
     const [quote, setQuote] = useState([]);
     const [quoteAuthor, setQuoteAuthor] = useState([]);
     const [authorNameResult, setAuthorNameResult] = useState();

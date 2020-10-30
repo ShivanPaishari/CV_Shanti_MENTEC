@@ -6,14 +6,19 @@ import MainContainer from "./MainContainer";
 import Footer from "./Footer";
 //import css
 import "../style/app.css";
+import "../style/toggle.css";
+import {GlobalStyles} from "../components/GlobalStyles";
 
 
-function GridLayout() {
+function GridLayout(props) {
+
 
   return (
     <div>
-      <div className="gridLayout">
-        <Header />
+              <GlobalStyles/>
+
+      <div id="gridLayout">
+        <Header handleOnClickToogle ={props.handleOnClickToogle}/>
         <MainContainer />
         <Footer />
       </div>

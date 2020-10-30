@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 //import design
 import "../style/app.css";
 import "../style/headerMenu.css";
+import "../style/toggle.css";
 
 
-function Header() {
+function Header(props) {
+
 
   function handleOnclick(event) {
     event.preventDefault();
@@ -48,7 +50,12 @@ function Header() {
           </ul>
         </nav>
       </div>
-      
+
+      <label className="switchdkm">
+        <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
+        <span className="slider round"></span>
+      </label>
+
     </div>
   );
 }
