@@ -15,13 +15,15 @@ function Header(props) {
     event.preventDefault();
     document.getElementById("menu").className = "open";
   }
+  function handleOnClickRemove (event){
+    event.preventDefault();
+    document.getElementById("menu").classList.remove("open");
+  }
 
 
   return (
 
     <div id="header">
-    <div id='transparency'></div>
-
 
       <div id="titles">
         <div>
@@ -43,16 +45,16 @@ function Header(props) {
       <div>
         <nav id="menu">
           <ul>
-            <li>
+            <li onClick={(event) => handleOnClickRemove(event)}> 
               <Link to="/about">Je suis </Link>
             </li>
-            <li>
+            <li onClick={(event) => handleOnClickRemove(event)}>
               <Link to="/dev">une newbie </Link>
             </li>
-            <li>
+            <li onClick={(event) => handleOnClickRemove(event)}>
               <Link to="/experience">expérimentée </Link>
             </li>
-            <li>
+            <li onClick={(event) => handleOnClickRemove(event)}>
               <Link to="/life">dans la vie</Link>
             </li>
           </ul>
