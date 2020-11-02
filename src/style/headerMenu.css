@@ -49,6 +49,7 @@
     cursor: pointer;
     background: transparent;
     z-index: 11;
+    margin-top: 0px;
   }
   /*traits de burger */
   #burger span {
@@ -91,5 +92,6 @@
     z-index: 11;
   }
   #menu.open {
-  visibility: visible;  }
+    visibility: visible;
+  }
 }
