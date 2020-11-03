@@ -1,7 +1,6 @@
 .cards {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
 }
@@ -13,10 +12,9 @@
   height: fit-content;
   border-radius: 10px;
   padding: 1%;
-  margin: 10px;
   background-color: setColorCard();
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px
 }
 
 .card h2 {
@@ -56,7 +54,7 @@
 }
 
 
-/* __________responsive _____*/
+/* ______________responsive_______________*/
 @media screen and (max-width: 1024px) {
 
   #training {
@@ -72,12 +70,24 @@
     margin: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
   }
   .card {
-    width: 280px;
+    margin-bottom: 10px;
     position: relative;
     margin-right: auto;
-    margin-top: 2%;
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    width: 320px;
+    margin-right: auto;
     margin-left: auto;
   }
 }
+
+
+

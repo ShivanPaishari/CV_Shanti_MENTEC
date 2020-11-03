@@ -2,9 +2,8 @@
 .mainSetting{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 200px;
-  margin-top: 30px;
+  background-color: black;
+  color: antiquewhite;
 }
 
 
@@ -14,9 +13,8 @@
     margin: auto;
   }
 
-  .componentContainer {
-    width: max-content;
-  }
+ 
+
   
   /* __________responsive _____*/
   @media screen and (max-width: 1024px) {

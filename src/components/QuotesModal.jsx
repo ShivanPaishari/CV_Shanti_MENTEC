@@ -47,6 +47,7 @@ function QuotesModal(props){
         <button onClick={props.handleOnClickHideModal}>x</button>
         <h3>Il n'y a pas {props.subject} à ajouter à cet instant.</h3>
         <p> Mais puisque vous êtes passé par là, je vous invite à prendre un instant pour deviner qui a dit :</p>
+        <br/>
         <h4>{quote}</h4>
         <div>
           <button onClick={handleOnClickAuthor}>L'auteur est :</button>

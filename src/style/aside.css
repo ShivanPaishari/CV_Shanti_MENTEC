@@ -36,6 +36,8 @@ aside {
       height: fit-content;
       padding-top: 0px;
       padding-bottom: 0px;
+      margin-top: 2Opx;;
+      margin-bottom: 20px;
       padding-left: 40px;;
       z-index: 5;
     }

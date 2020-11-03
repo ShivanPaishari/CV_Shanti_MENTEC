@@ -15,7 +15,7 @@ function MainContainer() {
 
 
   return (
-    <div id="mainContainer">
+    <div >
       <Switch>
         <Route path="/about">
           <About />

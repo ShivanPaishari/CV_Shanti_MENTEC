@@ -45,7 +45,7 @@ function Newbie() {
         </div>
       </aside>
       <div className="cards">
-        <div>{selectedState()}</div>
+        {selectedState()}
       </div>
     </div>
   );
