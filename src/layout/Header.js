@@ -31,15 +31,17 @@ function Header(props) {
           <h2>Developpeuse Web</h2>
           <p>React, Node.js</p>
         </div>
-        <div id="burger" onClick={(event) => handleOnclickBurger(event)}>
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="toggleburger">
+          <label className="switchdkm">
+            <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
+            <span className="slider round"></span>
+          </label>
+          <div id="burger" onClick={(event) => handleOnclickBurger(event)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <label className="switchdkm">
-          <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
-          <span className="slider round"></span>
-        </label>
       </div>
 
       <div>

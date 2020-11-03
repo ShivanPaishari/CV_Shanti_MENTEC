@@ -1,13 +1,9 @@
 import React,{useState} from "react";
 import GridLayout from "./layout/GridLayout";
-import {ThemeProvider} from "styled-components";
+// import styled,{ThemeProvider} from "styled-components";
 //import css
 import "./style/app.css";
 import "./style/reset.css";
-import indiaIn from "./Themes/indiaIn";
-import indiaOut from "./Themes/indiaOut";
-import basic from "./Themes/basic";
-import {GlobalStyle} from "./components/GlobalStyle";
 
 
 function App() {
@@ -22,14 +18,13 @@ function App() {
 
 
   return (
-    <ThemeProvider theme={theme==='indiaIn' ? indiaIn : indiaOut}>
-      <>
-        <GlobalStyle/>
-          <div className="App">
+    // <ThemeProvider theme={theme==='indiaIn' ? "" : ""}>
+  
+          <div>
             <GridLayout handleOnClickToogle={handleOnClickToogle}/>
           </div>
-      </>
-    </ThemeProvider>
+  
+    // </ThemeProvider>
   );
 }
 

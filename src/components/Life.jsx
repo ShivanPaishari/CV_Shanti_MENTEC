@@ -87,7 +87,7 @@ function Life() {
         </div>
       </aside>
       <div className="cards">
-        <div>{selectedState()}</div>
+        {selectedState()}
       </div>
     </div>
   );

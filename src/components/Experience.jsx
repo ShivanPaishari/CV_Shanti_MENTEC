@@ -73,7 +73,7 @@ function Experience() {
         </select>
       </aside>
       <div className="cards">
-        <div>{developContent()}</div>  
+        {developContent()} 
       </div>
     </div>
   );

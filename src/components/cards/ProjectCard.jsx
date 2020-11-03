@@ -36,22 +36,22 @@ function ProjectCard(props) {
 
   return (
 
-    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
-      <h2>{project.title}</h2>
-      <p className="links">{link()}</p>
-      <div>
-        <p className="internalLabel">{project.description} </p>
-        <p className="internalLabel">{project.details} </p>
+      <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
+        <h2>{project.title}</h2>
+        <p className="links">{link()}</p>
+        <div>
+          <p className="internalLabel">{project.description} </p>
+          <p className="internalLabel">{project.details} </p>
+        </div>
+        <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+              <div>
+                <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+              </div>
+              :""}
+        </div>
       </div>
-      <div>
-        <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
-        {modal === true ? 
-            <div>
-              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
-            </div>
-            :""}
-      </div>
-    </div>
  
   );
 }
