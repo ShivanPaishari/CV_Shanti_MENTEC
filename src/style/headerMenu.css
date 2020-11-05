@@ -1,3 +1,10 @@
+
+#header{
+  height: 300px;
+  width: 100vw;
+  margin: 0px;
+}
+
 #titles {
   padding-left: 50px;
   padding-top: 50px;

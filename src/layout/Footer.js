@@ -7,19 +7,16 @@ function Footer() {
 
   return (
     <footer>
-      <div>
       <a
         href="https://www.linkedin.com/in/shantimentec/"
         target="_blank"
         rel="noopener noreferrer"
-      >linkedIn</a>
+        >linkedIn</a>
       <a
         href="https://github.com/ShivanPaishari"
         target="_blank"
         rel="noopener noreferrer"
-      >Github</a>
-      </div>
-
+        >Github</a>
       <p>© 2020. All Rights Reserved.</p>
     </footer>
   );

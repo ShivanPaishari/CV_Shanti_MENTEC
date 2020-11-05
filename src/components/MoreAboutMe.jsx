@@ -4,18 +4,22 @@ import "../images/post-it-note.png";
 import "../style/moreAboutMe.css";
 
 
-function MoreAboutMe (){
+function MoreAboutMe (props){
+
+    const backgroundMode=props.backgroundMode;
 
     return (
-    
-        <div id="postit">
-            <div id="postitContent">
-                <h3><span>🤗</span>Team Lover</h3>
-                <h3><span>🤸🏽</span>Pole Danceuse</h3>
-                <h3><span>🧘</span>Yogiste</h3>
-                <h3><span>🕵🏽</span> Chasseuse de Street-Art</h3>
-                <h3><span>🇯🇵</span> Mère de geek</h3>
-            </div>                 
+        
+        <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+            <div id="postit">
+                <div id="postitContent">
+                    <h3><span>🤗</span>Team Lover</h3>
+                    <h3><span>🤸🏽</span>Pole Danceuse</h3>
+                    <h3><span>🧘</span>Yogiste</h3>
+                    <h3><span>🕵🏽</span> Chasseuse de Street-Art</h3>
+                    <h3><span>🇯🇵</span> Mère de geek</h3>
+                </div>                 
+            </div>
         </div>
     )
 }

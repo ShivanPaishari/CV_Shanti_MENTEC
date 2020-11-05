@@ -33,7 +33,7 @@ function Header(props) {
         </div>
         <div className="toggleburger">
           <label className="switchdkm">
-            <input type="checkbox" id="darkModeToggle" onClick={props.handleOnClickToogle}/>
+            <input type="checkbox" id="darkModeToggle"  onChange={props.handleOnClickToogle}/>
             <span className="slider round"></span>
           </label>
           <div id="burger" onClick={(event) => handleOnclickBurger(event)}>

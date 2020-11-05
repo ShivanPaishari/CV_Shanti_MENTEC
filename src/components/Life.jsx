@@ -14,10 +14,13 @@ import "../style/app.css";
 import "../style/aside.css";
 import "../style/reset.css";
 import "../style/mainSetting.css";
+import "../style/card.css";
 
 
-function Life() {
 
+function Life(props) {
+
+  const backgroundMode=props.backgroundMode;
   const [filteredState, setFilteredState] = useState();
 
 
@@ -37,9 +40,7 @@ function Life() {
     setFilteredState("more");
   }
   function selectedState() {
-    if (filteredState === undefined) {
-      return <p className="intro">Selectionnez une thématique</p>;
-    } else if (filteredState === "initial") {
+    if (filteredState === "initial") {
       return training
         .filter((forminit) => filteredState === forminit.type)
         .map((forminit) => <TrainingCard training={forminit} />);
@@ -63,27 +64,29 @@ function Life() {
 
   return (
 
-    <div className="mainSetting">
+    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
       <aside>
         <div>
           <div id="training">
-            <h4>Formations</h4>
-            <div>
-              <ul onClick={(event) => handleChangeInitialTraining(event)}>
-                Initiales
-              </ul>
-              <ul onClick={(event) => handleChangeContinuousTraining(event)}>
-                Continues
-              </ul>
+            <div className="asideLink">
+              <h4>Formations</h4>
+              <div>
+                <ul onClick={(event) => handleChangeInitialTraining(event)}>
+                  Initiales
+                </ul>
+                <ul onClick={(event) => handleChangeContinuousTraining(event)}>
+                  Continues
+                </ul>
+              </div>
             </div>
           </div>
-          <h4 onClick={(event) => handleChangeRecommendation(event)}>
+          <h4 className="asideLink" onClick={(event) => handleChangeRecommendation(event)}>
             Recommandations
           </h4>
-          <h4 onClick={(event) => handleChangeVolunteering(event)}>
+          <h4 className="asideLink" onClick={(event) => handleChangeVolunteering(event)}>
             Bénévolat
           </h4>
-          <h4 onClick={(event) => handleChangeMore(event)}>Mais encore...</h4>
+          <h4 className="asideLink" onClick={(event) => handleChangeMore(event)}>Mais encore...</h4>
         </div>
       </aside>
       <div className="cards">

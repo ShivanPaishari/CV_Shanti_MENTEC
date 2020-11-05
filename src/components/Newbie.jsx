@@ -11,10 +11,12 @@ import "../style/app.css";
 import "../style/aside.css";
 import "../style/reset.css";
 import "../style/mainSetting.css";
+import "../style/card.css";
 
 
-function Newbie() {
+function Newbie(props) {
 
+  const backgroundMode=props.backgroundMode;
   const [filteredState, setFilteredState] = useState();
 
   
@@ -25,9 +27,7 @@ function Newbie() {
     setFilteredState("projects");
   }
   function selectedState() {
-    if (filteredState === undefined) {
-      return <p className="intro">Selectionnez une thématique</p>;
-    } else if (filteredState === "tools") {
+    if (filteredState === "tools") {
       return techno.map((item) => <TechnoCard techno={item} />);
     } else if (filteredState === "projects") {
       return projets.map((item) => <ProjectCard projects={item} />);
@@ -37,11 +37,11 @@ function Newbie() {
 
   return (
 
-    <div className="mainSetting">
+    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
       <aside>
         <div>
-          <h4 onClick={(event) => handleChangeTools(event)}>Outils</h4>
-          <h4 onClick={(event) => handleChangeProjects(event)}>Projets</h4>
+          <h4 className="asideLink" onClick={(event) => handleChangeTools(event)}>Outils</h4>
+          <h4 className="asideLink" onClick={(event) => handleChangeProjects(event)}>Projets</h4>
         </div>
       </aside>
       <div className="cards">

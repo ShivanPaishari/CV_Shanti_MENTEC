@@ -1,14 +1,4 @@
-.logoXp {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10%;
-  position: relative;
-}
 
-.logoXp img {
-  height: 100px;
-  width: 100px;
-}
 
 .experiences {
   display: flex;
@@ -16,11 +6,13 @@
 }
 
 #selectXp {
-  border-color: crimson;
+  border-color: grey;
   color : crimson;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
+  box-shadow: inset 0px 0px 10px 4px gray;
+
 }
 #selectXP option {
   display: flex;

@@ -11,8 +11,9 @@ import "../style/mainSetting.css";
 import { setColorCard } from "../style/setColorCard";
 
 
-function About() {
+function About(props) {
 
+  const backgroundMode=props.backgroundMode;
   const [modal, setModal]= useState(false);
   const subject = "d'informations"
 
@@ -27,7 +28,7 @@ function About() {
 
   return (
 
-    <div className="mainSetting">
+    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
       <div
         className="card"
         id="resumecard"

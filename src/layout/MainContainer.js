@@ -11,25 +11,28 @@ import "../style/app.css";
 import "../style/mainSetting.css";
 
 
-function MainContainer() {
-
+function MainContainer(props) {
+  const backgroundMode=props.backgroundMode;
+  console.log("props de bacground mode dans maincontainer", props.backgroundMode)
 
   return (
     <div >
-      <Switch>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/dev">
-          <Newbie />
-        </Route>
-        <Route path="/experience">
-          <Experience />
-        </Route>
-        <Route path="/life">
-          <Life />
-        </Route>
-      </Switch>
+      <div >
+        <Switch>
+          <Route path="/about">
+            <About backgroundMode={backgroundMode}/>
+          </Route>
+          <Route path="/dev">
+            <Newbie backgroundMode={backgroundMode}/>
+          </Route>
+          <Route path="/experience">
+            <Experience backgroundMode={backgroundMode}/>
+          </Route>
+          <Route path="/life">
+            <Life backgroundMode={backgroundMode}/>
+          </Route>
+        </Switch>
+      </div>
     </div>
   );
 }
