@@ -119,6 +119,40 @@ function About(props) {
         </div>
       </div>
 
+      <div
+        className="card"
+        id="contactcard"
+        style={{ backgroundColor: `${setColorCard()} ` }}
+      >
+        <h2>Liens</h2>
+        <div className="internalLabel">
+          <a
+            href="https://github.com/ShivanPaishari"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Github</a>
+        </div>
+        <div className="internalLabel">
+          <a
+            href="https://www.linkedin.com/in/shantimentec/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >linkedIn</a>
+        </div>
+        <div className="internalLabel">
+          <p>Téléchargment à venir</p>
+        </div>
+
+        <div>
+          <p onClick={handleOnClickShowModal} className="pointer">+ ajouter une carte</p>
+          {modal === true ? 
+            <div>
+              <QuotesModal modal={modal} subject={subject} handleOnClickHideModal={handleOnClickHideModal}/>
+            </div>
+            :""}
+        </div>
+      </div>
+
     </div>  
   );
 }

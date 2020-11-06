@@ -7,6 +7,7 @@ import "../style/moreAboutMe.css";
 function MoreAboutMe (props){
 
     const backgroundMode=props.backgroundMode;
+    console.log ('props background dans more about me', props.backgroundMode)
 
     return (
         

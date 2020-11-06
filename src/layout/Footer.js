@@ -12,11 +12,6 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         >linkedIn</a>
-      <a
-        href="https://github.com/ShivanPaishari"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Github</a>
       <p>© 2020. All Rights Reserved.</p>
     </footer>
   );

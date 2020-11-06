@@ -5,20 +5,34 @@
     left: 15%;
     z-index: 11;
     align-self: center;
-    background-color:pink;
+    background-image: url('../images/pierre.JPG');
+    background-size: cover;
     padding: 16px;
-    width: 80%;
+    width: 40%;
     box-sizing: border-box;
     border-radius: 5px;
     transition: all 0.3s ease-out;
-    margin: auto;
-    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
     color: crimson;
+    border-width: 10px;
+    border-color: black;
 }
+#contentModal {
+  text-align: center; 
+  background-color: rgb(224, 224, 224);
+  box-shadow: inset 0px 0px 10px 4px gray;
+  padding: 20px;
+}
+#resultModal {
+  text-align: end;
+}
+
 
 button {
     border-color:crimson;
-    background-color : black;
+    background-color: rgb(198, 198, 201);
+    box-shadow: inset 0px 0px 10px 4px gray;
     border-radius: 4px;
     color: crimson;
     border-style: none;
@@ -33,4 +47,22 @@ button {
     height: 100em;
     z-index: 10;
     opacity: 0.4;
+  }
+
+  .hide {
+    display: none;
+  }
+
+    /* __________responsive _____*/
+
+  @media screen and (max-width: 1024px) {
+    .modal {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal {
+      width: 90%;
+    }
   }

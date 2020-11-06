@@ -57,7 +57,7 @@ function Life(props) {
         <VolunteeringCard volunteering={volunteer} />
       ));
     } else if (filteredState === "more") {
-      return <MoreAboutMe/>
+      return <MoreAboutMe backgroundMode={backgroundMode}/>
     }
   }
 
