@@ -9,12 +9,20 @@
   padding-left: 50px;
   padding-top: 50px;
 }
+.header-home a {
+  text-decoration: none;
+  color: ivory;
+}
+.header-home :hover {
+  color: palevioletred;
+}
 #titles p {
   margin-top:10px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 #titles h2 {
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .toggleburger{
@@ -26,7 +34,7 @@
 #menu a {
   text-decoration: none;
   color: crimson;
-  font-size: 18px;
+  font-size: x-large;
   margin-bottom: 20px;
 }
 #menu a:hover {
@@ -48,8 +56,8 @@
 
 
 /* __________responsive _____*/
-@media screen and (max-width: 470px) {
-  /*zone de clic*/
+@media screen and (max-width: 600px) {
+ 
   #burger {
     display: flex;
     right:20px;
@@ -61,7 +69,7 @@
     background: transparent;
     z-index: 11;
   }
-  /*traits de burger */
+
   #burger span {
     width: 80%;
     height: 7px;

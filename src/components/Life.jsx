@@ -64,7 +64,7 @@ function Life(props) {
 
   return (
 
-    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+    <div className={"mainSetting " +  (backgroundMode === 'light' ? 'light' : 'dark')} >
       <aside>
         <div>
           <div id="training">

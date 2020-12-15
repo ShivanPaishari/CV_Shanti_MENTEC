@@ -10,6 +10,8 @@ import "../style/toggle.css";
 
 function Header(props) {
 
+  const backgroundMode = props.backgroundMode;
+
 
   function handleOnclickBurger(event) {
     event.preventDefault();
@@ -24,13 +26,13 @@ function Header(props) {
   return (
 
     <div id="header">
-
       <div id="titles">
-        <div>
-          <p>Shanti Mentec</p>
-          <h2>Developpeuse Web</h2>
-          <p>React, Node.js</p>
-        </div>
+        <div className="header-home" >
+          <Link to="/" >
+            <p className={(backgroundMode === 'light' ? 'light' : 'dark')}>Shanti Mentec</p>
+            <h2 className={(backgroundMode === 'light' ? 'light' : 'dark')}>Proxy Product Owner</h2>
+          </Link>
+        </div> 
         <div className="toggleburger">
           <label className="switchdkm">
             <input type="checkbox" id="darkModeToggle"  onChange={props.handleOnClickToogle}/>

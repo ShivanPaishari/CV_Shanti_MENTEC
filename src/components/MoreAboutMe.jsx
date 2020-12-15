@@ -11,7 +11,7 @@ function MoreAboutMe (props){
 
     return (
         
-        <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+        <div className={"postitContainer " + (backgroundMode === 'light' ? 'light' : 'dark')} >
             <div id="postit">
                 <div id="postitContent">
                     <h3><span>🤗</span>Team Lover</h3>

@@ -28,16 +28,24 @@ function Newbie(props) {
   }
   function selectedState() {
     if (filteredState === "tools") {
-      return techno.map((item) => <TechnoCard techno={item} />);
+      return techno.map((item) => 
+              <div>
+                <TechnoCard techno={item} />
+              </div>
+      )           
     } else if (filteredState === "projects") {
-      return projets.map((item) => <ProjectCard projects={item} />);
+        return projets.map((item) => 
+                <div>
+                  <ProjectCard projects={item} />
+                </div>
+        );
     }
   }
 
 
   return (
 
-    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+    <div className={"mainSetting " + (backgroundMode === 'light' ? 'light' : 'dark')} >
       <aside>
         <div>
           <h4 className="asideLink" onClick={(event) => handleChangeTools(event)}>Outils</h4>

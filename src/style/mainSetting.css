@@ -3,9 +3,19 @@
   display: flex;
   flex-direction: row;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
+.intro {
+  color: rgb(122, 122, 122);
+  padding: 5px;
+  margin: auto;
+}
+
+
+
+
+/*darl light mode*/
 .mainSetting.dark{
   background-image: url('../images/aurangabad.jpg');
   background-size: contain;
@@ -20,15 +30,6 @@
   background-position-x: center;
   background-position-y: bottom;
 }
-
-
-.intro {
-    color: rgb(122, 122, 122);
-    padding: 5px;
-    margin: auto;
-  }
-
-
 
   
   /* __________responsive _____*/

@@ -26,13 +26,13 @@ function Experience(props) {
   function developContent() {
       return experiences
         .filter((experience) => choosenXpState === experience.job)
-        .map((experience) => <ExperienceCard experiences={experience} />);
+        .map(experience => <ExperienceCard experiences={experience} />)
     }
 
 
   return (
 
-    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+    <div className={"mainSetting " + (backgroundMode === 'light' ? 'light' : 'dark')} >
       <aside>
         <select id="selectXp" onChange={(event) => handleChangeTitle(event)}>
           <option value="">Tous les postes</option>
@@ -45,7 +45,7 @@ function Experience(props) {
           })}
         </select>
       </aside>
-      <div className="cards">
+      <div className="cardNoGrid">
         {developContent()} 
       </div>
     </div>

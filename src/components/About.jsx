@@ -28,9 +28,10 @@ function About(props) {
 
   return (
 
-    <div className={"mainSetting" + " " + (backgroundMode === 'light' ? 'light' : 'dark')} >
+    <div className={"mainSetting cardNoGrid " +  (backgroundMode === "light" ? "light" : "dark")} >
+
       <div
-        className="card"
+        className="cardBig"
         id="resumecard"
         style={{ backgroundColor: `${setColorCard()} ` }}
       >
@@ -99,7 +100,7 @@ function About(props) {
       </div>
 
       <div
-        className="card"
+        className="cardBig"
         id="contactcard"
         style={{ backgroundColor: `${setColorCard()} ` }}
       >
@@ -120,7 +121,7 @@ function About(props) {
       </div>
 
       <div
-        className="card"
+        className="cardBig"
         id="contactcard"
         style={{ backgroundColor: `${setColorCard()} ` }}
       >
@@ -152,7 +153,6 @@ function About(props) {
             :""}
         </div>
       </div>
-
     </div>  
   );
 }

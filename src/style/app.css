@@ -4,16 +4,6 @@ body {
 }
 
 
-.gridLayout {
-  height: fit-content;
-  display: grid;
-  grid-template-columns: repeat (2, 1fr);
-  grid-template-areas:
-    "head head"
-    "main main"
-    "foot foot";
-  
-}
 .dark {
   background-color: black;
   color:antiquewhite;
@@ -23,19 +13,13 @@ body {
   color: black;
 }
 
-#header {
-  grid-area: head;
+.img-accueil {
+  background-image: url("../images/pierre.JPG") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  padding-bottom: 75%;
 }
-
-#mainContainer {
-  grid-area: main;
-}
-
-footer {
-  grid-area: foot;
-}
-
-
 
   /* __________responsive _____*/
 

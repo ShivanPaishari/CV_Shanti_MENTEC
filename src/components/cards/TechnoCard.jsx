@@ -21,9 +21,9 @@ function TechnoCard(props) {
         <div>
           <p>{tech.content}</p>
         </div>
-      );
+      )
     }
-  });
+  })
 
 
   function handleOnClickShowModal (){

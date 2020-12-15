@@ -44,7 +44,7 @@ function ExperienceCard(props) {
 
   return (
 
-    <div className="card" style={{ backgroundColor: `${setColorCard()} ` }}>
+    <div className="cardBig" style={{ backgroundColor: `${setColorCard()} ` }}>
       <h2>{experiences.job}</h2>
       <div className="internalLabel">
         <h3>{experiences.company}</h3>

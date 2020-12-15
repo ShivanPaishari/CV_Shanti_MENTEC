@@ -1,16 +1,27 @@
+.postitContainer {
+    width: 100%;
+    background-color: transparent;
+}
+
 #postit {
     background-image: url(../images/post-it-note.png);
     opacity: 1;
+    background-repeat: no-repeat;
     background-size:100%;
-    transform: rotate(-10deg);
-    background-position-x: 40px;
-    background-position-y: 30px;
-    height: 450px;
-    width: 450px;
+    margin-left: 100px;
+
 }
 #postitContent{
     transform: rotate(-7deg);
-    margin: 20px;
-    padding: 80px;
+    margin: 15px;
+    padding: 50px;
     line-height: 3em;
+}
+
+/*______________responsive_________*/
+@media screen and (max-width: 1024px) {
+    #postit {
+        background-size: 40%;
+        margin-left : 10x;
+    }
 }

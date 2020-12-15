@@ -6,19 +6,23 @@ import About from "../components/About";
 import Newbie from "../components/Newbie";
 import Experience from "../components/Experience";
 import Life from "../components/Life";
+import Home from "../components/Home";
 //import css
 import "../style/app.css";
 import "../style/mainSetting.css";
 
 
+
 function MainContainer(props) {
   const backgroundMode=props.backgroundMode;
-  console.log("props de bacground mode dans maincontainer", props.backgroundMode)
 
   return (
     <div >
-      <div >
+      <div>
         <Switch>
+        <Route path="/" exact>
+            <Home backgroundMode={backgroundMode}/>
+          </Route>
           <Route path="/about">
             <About backgroundMode={backgroundMode}/>
           </Route>
